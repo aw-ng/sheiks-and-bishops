@@ -1,26 +1,31 @@
-import './pages/home';
-import 'bootstrap';
+document.getElementById('year').textContent = new Date().getFullYear();
 
-import Carousel from 'bootstrap/js/dist/carousel';
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+      mobileMenu.querySelectorAll('a').forEach((a) =>
+        a.addEventListener('click', () => mobileMenu.classList.remove('open'))
+      );
 
-const carouselElement = document.querySelector('#carouselLandingCaptions');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-if (carouselElement) {
-	new Carousel(carouselElement, {
-		interval: 3000,
-		ride: 'carousel',
-		pause: 'hover',
-		wrap: true
-	});
-}
-
-const carouselElement2 = document.querySelector('#carouselTestimonialCaptions');
-
-if (carouselElement2) {
-	new Carousel(carouselElement2, {
-		interval: 3000,
-		ride: 'carousel',
-		pause: 'hover',
-		wrap: true
-	});
-}
+      const form = document.getElementById('newsletterForm');
+      const msg = document.getElementById('newsletterMsg');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        msg.textContent = 'Thanks for subscribing.';
+        msg.style.display = 'block';
+        form.reset();
+        setTimeout(() => { msg.style.display = 'none'; }, 4000);
+      });
