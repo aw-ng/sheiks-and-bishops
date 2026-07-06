@@ -20,6 +20,34 @@ document.getElementById('year').textContent = new Date().getFullYear();
       );
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = lightbox.querySelector('img');
+      const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+      document.querySelectorAll('.milestone-img').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const full = btn.getAttribute('data-full');
+          const alt = btn.querySelector('img').getAttribute('alt');
+          lightboxImg.src = full;
+          lightboxImg.alt = alt;
+          lightbox.classList.add('open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+      }
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+
       const form = document.getElementById('newsletterForm');
       const msg = document.getElementById('newsletterMsg');
       form.addEventListener('submit', (e) => {
