@@ -84,6 +84,13 @@
       }
       .brand-name span { color: var(--teal); }
 
+      .brand-logo {
+        height: 46px;
+        width: auto;
+        display: block;
+      }
+      footer .brand-logo { height: 40px; }
+
       nav.primary {
         display: flex;
         align-items: center;
