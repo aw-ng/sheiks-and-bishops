@@ -1,12 +1,10 @@
 document.getElementById('year').textContent = new Date().getFullYear();
-
       const menuBtn = document.getElementById('menuBtn');
       const mobileMenu = document.getElementById('mobileMenu');
       menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
       mobileMenu.querySelectorAll('a').forEach((a) =>
         a.addEventListener('click', () => mobileMenu.classList.remove('open'))
       );
-
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -19,11 +17,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
         { threshold: 0.12 }
       );
       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = lightbox.querySelector('img');
       const lightboxClose = lightbox.querySelector('.lightbox-close');
-
       document.querySelectorAll('.milestone-img').forEach((btn) => {
         btn.addEventListener('click', () => {
           const full = btn.getAttribute('data-full');
@@ -34,7 +30,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
           lightbox.setAttribute('aria-hidden', 'false');
         });
       });
-
       function closeLightbox() {
         lightbox.classList.remove('open');
         lightbox.setAttribute('aria-hidden', 'true');
@@ -47,7 +42,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeLightbox();
       });
-
       const form = document.getElementById('newsletterForm');
       const msg = document.getElementById('newsletterMsg');
       form.addEventListener('submit', (e) => {
