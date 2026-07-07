@@ -12,7 +12,7 @@ const sass = gulpSass(dartSass);
 const styles = 'styles/**/*.scss';
 const scripts = 'scripts/**/*.js';
 
-const scriptsEntry = 'scripts/main.js';
+const scriptsEntry = 'scripts/main.min.js';
 
 gulp.task('css', function () {
 	return gulp
@@ -36,7 +36,7 @@ gulp.task('js', function () {
 		transform: [['babelify', { presets: ['@babel/env'] }]]
 	})
 		.bundle()
-		.pipe(source('main.js'))
+		.pipe(source('main.min.js'))
 		.pipe(buffer())
 		.pipe(sourcemaps.init({ loadMaps: true }))
 		.pipe(uglify.default())
