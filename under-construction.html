@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sheiks & Bishop | Under Construction</title>
+		<meta
+			name="description"
+			content="Sheiks & Bishop — secure technology, trusted solutions. Our site is currently being rebuilt."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--paper: #fafaf7;
+				--ink: #0b2233;
+				--ink-soft: #51677a;
+				--ink-faint: #8a9aa6;
+				--line: #dbe1e0;
+				--line-strong: #c3cbca;
+				--teal: #0e7490;
+				--teal-deep: #0b5a70;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+			}
+			body {
+				background: var(--paper);
+				color: var(--ink);
+				font-family: 'Inter', sans-serif;
+				-webkit-font-smoothing: antialiased;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 24px;
+			}
+			.card {
+				max-width: 560px;
+				width: 100%;
+				text-align: center;
+			}
+			.mark {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 28px;
+			}
+			.brand-logo {
+				height: 56px;
+				width: auto;
+				max-width: 180px;
+				object-fit: contain;
+			}
+			.eyebrow {
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				font-family: 'IBM Plex Mono', monospace;
+				font-size: 12px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				color: var(--teal-deep);
+			}
+			.eyebrow .tick {
+				width: 22px;
+				height: 1px;
+				background: var(--teal);
+				display: inline-block;
+			}
+			h1 {
+				font-family: 'Space Grotesk', sans-serif;
+				font-weight: 600;
+				letter-spacing: -0.01em;
+				font-size: clamp(30px, 6vw, 44px);
+				line-height: 1.15;
+				margin: 20px 0 0;
+			}
+			p.lede {
+				margin: 18px 0 0;
+				font-size: 16px;
+				line-height: 1.6;
+				color: var(--ink-soft);
+			}
+			.rule {
+				margin: 40px auto;
+				width: 64px;
+				height: 1px;
+				background: var(--line-strong);
+			}
+			.contact {
+				font-size: 14px;
+				color: var(--ink-faint);
+			}
+			.contact a {
+				color: var(--teal-deep);
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				transition: border-color 0.2s ease;
+			}
+			.contact a:hover {
+				border-color: var(--teal);
+			}
+			.brand-name {
+				margin-top: 28px;
+				font-family: 'Space Grotesk', sans-serif;
+				font-weight: 600;
+				font-size: 14px;
+				color: var(--ink-faint);
+				letter-spacing: 0.02em;
+			}
+			.brand-name span {
+				color: var(--teal);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="mark">
+				<img
+					src="assets/Images/logo.png"
+					alt="Sheiks & Bishop logo"
+					class="brand-logo"
+				/>
+			</div>
+			<span class="eyebrow"
+				><span class="tick"></span>Site under construction</span
+			>
+			<h1>We're rebuilding, securely.</h1>
+			<p class="lede">
+				Our site is offline for a moment while we redesign it to better
+				reflect who we are. We'll be back online shortly.
+			</p>
+			<div class="rule"></div>
+			<p class="contact">
+				In the meantime, reach us at
+				<a href="mailto:info@sheiksandbishop.com"
+					>info@sheiksandbishop.com</a
+				>
+			</p>
+			<p class="brand-name">Sheiks<span>&amp;</span>Bishops</p>
+		</div>
+	</body>
+</html>
