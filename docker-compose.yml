@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    image: httpd:2.4
+    container_name: sbp_web
+    ports:
+      - "5577:80"
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+      - ./apache.conf:/usr/local/apache2/conf/httpd.conf

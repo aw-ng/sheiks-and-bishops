@@ -12,6 +12,7 @@
 		"project"
 	],
 	"scripts": {
+		"start": "yarn build && docker compose up -d",
 		"dev": "vite --force",
 		"watch": "gulp watch",
 		"compile:css": "gulp css",
