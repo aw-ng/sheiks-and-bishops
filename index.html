@@ -1,123 +1,449 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sheiks & Bishop | Under Construction</title>
-    <meta name="description" content="Sheiks & Bishop — secure technology, trusted solutions. Our site is currently being rebuilt." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --paper: #fafaf7;
-        --ink: #0b2233;
-        --ink-soft: #51677a;
-        --ink-faint: #8a9aa6;
-        --line: #dbe1e0;
-        --line-strong: #c3cbca;
-        --teal: #0e7490;
-        --teal-deep: #0b5a70;
-      }
-      * { box-sizing: border-box; }
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font-family: 'Inter', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px;
-      }
-      .card {
-        max-width: 560px;
-        width: 100%;
-        text-align: center;
-      }
-      .mark {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 28px;
-      }
-      .brand-logo {
-        height: 56px;
-        width: auto;
-        max-width: 180px;
-        object-fit: contain;
-      }
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 12px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--teal-deep);
-      }
-      .eyebrow .tick { width: 22px; height: 1px; background: var(--teal); display: inline-block; }
-      h1 {
-        font-family: 'Space Grotesk', sans-serif;
-        font-weight: 600;
-        letter-spacing: -0.01em;
-        font-size: clamp(30px, 6vw, 44px);
-        line-height: 1.15;
-        margin: 20px 0 0;
-      }
-      p.lede {
-        margin: 18px 0 0;
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--ink-soft);
-      }
-      .rule {
-        margin: 40px auto;
-        width: 64px;
-        height: 1px;
-        background: var(--line-strong);
-      }
-      .contact {
-        font-size: 14px;
-        color: var(--ink-faint);
-      }
-      .contact a {
-        color: var(--teal-deep);
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.2s ease;
-      }
-      .contact a:hover { border-color: var(--teal); }
-      .brand-name {
-        margin-top: 28px;
-        font-family: 'Space Grotesk', sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        color: var(--ink-faint);
-        letter-spacing: 0.02em;
-      }
-      .brand-name span { color: var(--teal); }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="mark">
-        <img src="assets/Images/logo.png" alt="Sheiks & Bishop logo" class="brand-logo" />
-      </div>
-      <span class="eyebrow"><span class="tick"></span>Site under construction</span>
-      <h1>We're rebuilding, securely.</h1>
-      <p class="lede">Our site is offline for a moment while we redesign it to better reflect who we are. We'll be back online shortly.</p>
-      <div class="rule"></div>
-      <p class="contact">In the meantime, reach us at <a href="mailto:info@sheiksandbishop.com">info@sheiksandbishop.com</a></p>
-      <p class="brand-name">Sheiks<span>&amp;</span>Bishops</p>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sheiks & Bishops | Interpol Systems Expert</title>
+		<meta
+			name="description"
+			content="Sheiks & Bishops - Interpol Systems Expert"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+			defer
+		></script>
+		<script type="text/javascript" src="./dist/main.min.js" defer></script>
+		<style type="text/css">
+			body {
+				font-family: 'Montserrat', sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				margin: 0;
+				padding: 0;
+			}
+
+			section {
+				padding: 100px 0;
+			}
+
+			.separator::after,
+			.separator-start::after {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 3px;
+				background-color: orange;
+				margin: 20px auto 0 auto;
+			}
+
+			.separator-start::after {
+				margin: 20px 0 0 0;
+			}
+
+			.image-box {
+				height: 360px;
+				background-color: #f0f0f0;
+				border-radius: 5px;
+			}
+
+			.icon-box {
+				border: 1px solid #ccc;
+				padding: 20px;
+				text-align: center;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Our Hero Section -->
+		<section class="p-0 bg-black vh-100">
+			<!-- Slider -->
+			<div
+				id="hero-slider"
+				class="splide position-absolute"
+				aria-label="Hero Slider"
+			>
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img
+								src="./assets/images/slider/slider-1.jpeg"
+								alt="Interpol Conference"
+								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+							/>
+						</li>
+						<li class="splide__slide">
+							<img
+								src="./assets/images/slider/slider-2.jpeg"
+								alt="Interpol Conference"
+								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+							/>
+						</li>
+						<li class="splide__slide">
+							<img
+								src="./assets/images/slider/slider-3.jpeg"
+								alt="Interpol Conference"
+								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+							/>
+						</li>
+						<li class="splide__slide">
+							<img
+								src="./assets/images/slider/slider-4.jpeg"
+								alt="Interpol Conference"
+								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+							/>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Navigation -->
+			<nav
+				aria-label="Main navigation"
+				class="p-5 w-100 position-absolute"
+			>
+				<div
+					class="container-nav mx-auto d-flex align-items-center justify-content-between"
+				>
+					<a href="./" aria-label="Company logo">
+						<img
+							src="./assets/images/logo.jpeg"
+							height="45"
+							alt="Company logo"
+							id="logo"
+						/>
+					</a>
+
+					<ul
+						id="nav"
+						class="d-flex justify-content-end align-items-center gap-5 mb-0"
+					>
+						<li class="d-none d-lg-flex">
+							<a
+								href="./"
+								aria-label="Home"
+								class="text-decoration-none text-uppercase fw-bold text-white link-success"
+							>
+								Home
+							</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a
+								href="./about"
+								aria-label="About Us"
+								class="text-decoration-none text-uppercase fw-bold text-white link-success"
+							>
+								About Us
+							</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a
+								href="./projects"
+								aria-label="Projects"
+								class="text-decoration-none text-uppercase fw-bold text-white link-success"
+							>
+								Projects
+							</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a
+								href="./gallery"
+								aria-label="Gallery"
+								class="text-decoration-none text-uppercase fw-bold text-white link-success"
+							>
+								Gallery
+							</a>
+						</li>
+						<li class="d-none d-lg-flex">
+							<a
+								href="./contact"
+								aria-label="Contact Us"
+								class="text-decoration-none text-uppercase fw-bold text-white link-success"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Hero Content -->
+			<div
+				class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative"
+			>
+				<div class="row">
+					<div class="col-md-12">
+						<h1
+							class="display-1 text-uppercase fw-regular text-white"
+						>
+							Sheiks & Bishops
+						</h1>
+						<h2 class="display-6 text-uppercase fw-bold text-white">
+							Interpol Systems Expert
+						</h2>
+					</div>
+					<div class="col-md-6 offset-md-3">
+						<p class="lead text-white mt-3">
+							Sheiks & Bishops has a reputation in the Security
+							and IT Industry for designing and developing
+							practical, state-of-the-art Software and deploying
+							Hardware that are quick to implement, and easy to
+							use.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Services Section -->
+		<section>
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-6 offset-md-3 text-center">
+						<h2
+							class="display-6 text-uppercase fw-bold mb-5 separator"
+						>
+							Our Services
+						</h2>
+						<p class="lead">
+							We provide smart, software security solutions
+							tailored to meet the needs of government and
+							corporate organizations.
+						</p>
+					</div>
+				</div>
+
+				<div class="row gx-5 mb-5">
+					<div class="col-md-6">
+						<div class="row gx-5 gy-5">
+							<div class="col-md-6">
+								<div class="icon-box">
+									<svg
+										class="w-6 h-6 text-gray-800 dark:text-white"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										width="72"
+										height="72"
+										fill="none"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke="red"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="1"
+											d="M9.5 11H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h4.5M7 11V7a3 3 0 0 1 6 0v1.5m2.5 5.5v1.5l1 1m3.5-1a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
+										/>
+									</svg>
+
+									<h5 class="my-3 fw-bold text-uppercase">
+										Security Systems
+									</h5>
+									<p>
+										Design & implementation of advanced
+										security systems for government and
+										corporate bodies.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="icon-box">
+									<svg
+										class="w-6 h-6 text-gray-800 dark:text-white"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										width="72"
+										height="72"
+										fill="none"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke="red"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="1"
+											d="M5.35709 16V5.78571c0-.43393.34822-.78571.77777-.78571H18.5793c.4296 0 .7778.35178.7778.78571V16M5.35709 16h-1c-.55229 0-1 .4477-1 1v1c0 .5523.44771 1 1 1H20.3571c.5523 0 1-.4477 1-1v-1c0-.5523-.4477-1-1-1h-1M5.35709 16H19.3571M9.35709 8l2.62501 2.5L9.35709 13m4.00001 0h2"
+										/>
+									</svg>
+
+									<h5 class="my-3 fw-bold text-uppercase">
+										Software
+									</h5>
+									<p>
+										Design & development of security
+										software solutions needed by government
+										and corporate bodies.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="icon-box">
+									<svg
+										class="w-6 h-6 text-gray-800 dark:text-white"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										width="72"
+										height="72"
+										fill="none"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke="red"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="1"
+											d="M5 12a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1M5 12h14M5 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1m-2 3h.01M14 15h.01M17 9h.01M14 9h.01"
+										/>
+									</svg>
+
+									<h5 class="my-3 fw-bold text-uppercase">
+										Hardware
+									</h5>
+									<p>
+										Supply, installation and support for
+										quality hardware systems needed for
+										security compliance.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="icon-box">
+									<svg
+										class="w-6 h-6 text-gray-800 dark:text-white"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										width="72"
+										height="72"
+										fill="none"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke="red"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="1"
+											d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+										/>
+										<path
+											stroke="red"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="1"
+											d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+										/>
+									</svg>
+
+									<h5 class="my-3 fw-bold text-uppercase">
+										Consultancy
+									</h5>
+									<p>
+										Interpol Systems Expert guidance and
+										support to help your organization
+										achieve its security goals.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<img
+							src="assets/images/our-services.png"
+							alt="Our Services"
+							class="img-fluid rounded h-100"
+							object-fit="fill"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Certifications Section -->
+		<section class="bg-black">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2
+							class="display-6 text-uppercase fw-bold mb-5 separator-start text-white"
+						>
+							Certifications
+						</h2>
+						<p class="display-6 text-white">
+							Here at Sheiks & Bishops, we ensure we carry out
+							standard services and therefore have the required
+							certifications to do this.
+						</p>
+						<a
+							class="p-3 text-uppercase text-white text-decoration-none fw-bold mt-3 border-1 border-white d-inline-block"
+							style="
+								background: transparent;
+								border: 1px solid white;
+							"
+						>
+							View Certifications
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Team Section -->
+		<section>
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-6 offset-md-3 text-center">
+						<h2
+							class="display-6 text-uppercase fw-bold mb-5 separator"
+						>
+							Our Team
+						</h2>
+						<p class="lead">
+							We function as a group of experts operating from a
+							focal point. In association with other firms and
+							external experts, a whole range of projects become
+							easily realized.
+						</p>
+					</div>
+				</div>
+
+				<br />
+
+				<div class="row gx-5">
+					<div class="col-md-3">
+						<img
+							src="./assets/images/chikwe-udensi.png"
+							alt="Sir Chikwe Udensi"
+							class="img-fluid"
+						/>
+						<h5 class="mt-3 fw-bold text-center">
+							Sir Chikwe Udensi
+						</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
