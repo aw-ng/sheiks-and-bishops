@@ -122,44 +122,17 @@
 	</head>
 	<body>
 		<!-- Our Hero Section -->
-		<section class="p-0 bg-black gallery-hero">
-			<!-- Slider -->
-			<div
-				id="hero-slider"
-				class="splide position-absolute z-0 w-100"
-				aria-label="Hero Slider"
-			>
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-1.jpg"
-								alt="Command Center"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-3.jpg"
-								alt="Server Room"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-4.jpg"
-								alt="Command Center"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<section class="bg-black overflow-hidden position-relative">
+			<img
+				src="./assets/images/slider/slider-1.jpeg"
+				alt="Hero Image"
+				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
+			/>
 
 			<!-- Navigation -->
 			<nav
 				aria-label="Main navigation"
-				class="p-5 pt-0 w-100 position-absolute z-1"
+				class="p-5 pt-0 w-100 position-absolute top-0 z-1"
 			>
 				<div
 					class="container-nav mx-auto d-flex align-items-center justify-content-between"
@@ -228,22 +201,16 @@
 
 			<!-- Hero Content -->
 			<div
-				class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative z-1"
+				class="container z-1 position-relative"
+				style="padding: 100px 0"
 			>
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<h1
-							class="display-4 text-uppercase fw-regular fw-bold text-white mb-3"
+							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
 						>
-							Moments That Define Our Journey
+							Gallery
 						</h1>
-					</div>
-					<div class="col-md-12">
-						<p class="text-white fs-5 mt-0">
-							Explore the milestones, collaborations, and
-							technology initiatives that continue to shape the
-							Sheiks & Bishops story.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -347,7 +314,7 @@
 						interval: 4000,
 						arrows: false,
 						pagination: false,
-						speed: 1000,
+						speed: 1000
 					}).mount();
 				}
 			});
