@@ -122,44 +122,17 @@
 	</head>
 	<body>
 		<!-- Our Hero Section -->
-		<section class="p-0 bg-black gallery-hero">
-			<!-- Slider -->
-			<div
-				id="hero-slider"
-				class="splide position-absolute z-0 w-100"
-				aria-label="Hero Slider"
-			>
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-1.jpg"
-								alt="Command Center"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-3.jpg"
-								alt="Server Room"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-						<li class="splide__slide">
-							<img
-								src="./assets/images/slider/slider-image-4.jpg"
-								alt="Command Center"
-								class="img-fluid w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<section class="bg-black overflow-hidden position-relative">
+			<img
+				src="./assets/images/slider/slider-1.jpeg"
+				alt="Hero Image"
+				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
+			/>
 
 			<!-- Navigation -->
 			<nav
 				aria-label="Main navigation"
-				class="p-5 pt-0 w-100 position-absolute z-1"
+				class="p-5 pt-0 w-100 position-absolute top-0 z-1"
 			>
 				<div
 					class="container-nav mx-auto d-flex align-items-center justify-content-between"
@@ -228,78 +201,133 @@
 
 			<!-- Hero Content -->
 			<div
-				class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative z-1"
+				class="container z-1 position-relative"
+				style="padding: 100px 0"
 			>
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<h1
-							class="display-4 text-uppercase fw-regular fw-bold text-white mb-3"
+							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
 						>
-							Moments That Define Our Journey
+							Gallery
 						</h1>
 					</div>
-					<div class="col-md-12">
-						<p class="text-white fs-5 mt-0">
-							Explore the milestones, collaborations, and
-							technology initiatives that continue to shape the
-							Sheiks & Bishops story.
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 text-center">
+						<p class="fs-3 lead">
+							A picture they say is
+							<strong class="fw-bold"
+								>worth a thousand words</strong
+							>. Here are some of our memorable moments captured
+							in pictures.
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Gallery Grid -->
-		<section class="gallery-grid pt-0">
+		<!-- Gallery Section 1 -->
+		<section class="pt-0">
 			<div class="container">
-				<div class="row gx-4 gy-4">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<h2
+							class="display-6 text-uppercase fw-bold mb-5 separator text-center"
+						>
+							INTERPOL General Assembly in Vienna, Austria
+						</h2>
+					</div>
+				</div>
+				<div class="row gx-5 gy-5">
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-1.jpg"
-								alt="Sir Chikwe Udensi addressing the Interpol General Assembly"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-1.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-2.jpg"
-								alt="Meeting with international delegates"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-2.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-3.jpg"
-								alt="Delegate handshake at official reception"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-3.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-4.jpg"
-								alt="Sir Chikwe Udensi at the Interpol podium"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-4.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-5.jpg"
-								alt="Team photo at the NCB Abuja office"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-5.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 					<div class="col-md-6">
-						<div class="gallery-item">
-							<img
-								src="./assets/images/gallery/gallery-6.jpg"
-								alt="Official ceremony with law enforcement leadership"
-							/>
-						</div>
+						<img
+							src="./assets/images/gallery/interpol-general-assembly-in-vienna-austria/picture-6.jpeg"
+							class="img-fluid rounded"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery Section 2 -->
+		<section class="pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<h2
+							class="display-6 text-uppercase fw-bold mb-5 separator text-center"
+						>
+							Sheiks & Bishops Team With Abu Dhabi Customs
+						</h2>
+					</div>
+				</div>
+				<div class="row gx-5 gy-5">
+					<div class="col-md-6">
+						<img
+							src="./assets/images/gallery/sheiks-and-bishops-with-abu-dhabi-customs/picture-1.jpeg"
+							class="img-fluid rounded"
+						/>
+					</div>
+					<div class="col-md-6">
+						<img
+							src="./assets/images/gallery/sheiks-and-bishops-with-abu-dhabi-customs/picture-2.jpeg"
+							class="img-fluid rounded"
+						/>
+					</div>
+					<div class="col-md-6">
+						<img
+							src="./assets/images/gallery/sheiks-and-bishops-with-abu-dhabi-customs/picture-3.jpeg"
+							class="img-fluid rounded"
+						/>
+					</div>
+					<div class="col-md-6">
+						<img
+							src="./assets/images/gallery/sheiks-and-bishops-with-abu-dhabi-customs/picture-4.jpeg"
+							class="img-fluid rounded"
+						/>
+					</div>
+					<div class="col-md-6">
+						<img
+							src="./assets/images/gallery/sheiks-and-bishops-with-abu-dhabi-customs/picture-5.jpeg"
+							class="img-fluid rounded"
+						/>
 					</div>
 				</div>
 			</div>
@@ -347,7 +375,7 @@
 						interval: 4000,
 						arrows: false,
 						pagination: false,
-						speed: 1000,
+						speed: 1000
 					}).mount();
 				}
 			});
