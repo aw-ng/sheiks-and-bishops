@@ -1,0 +1,15 @@
+name: Sheiks & Bishops CI
+
+permissions:
+    contents: write
+
+jobs:
+    ci:
+        name: CI
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Copy HTML pages to repository root
+              run: |
+                  cp pages/*.html .
