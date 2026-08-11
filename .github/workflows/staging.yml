@@ -1,9 +1,9 @@
-name: Sheiks & Bishops Prod
+name: Sheiks & Bishops Staging
 
 on:
     push:
         branches:
-            - main
+            - staging
 
 permissions:
     contents: write
