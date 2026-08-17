@@ -45,38 +45,34 @@ The repository is responsible primarily for the website's frontend/look and feel
 
 ## Project Structure
 
+```text
 sheiks-and-bishops/
 │
 ├── .github/
-│ └── workflows/ # GitHub Actions workflows
-│
-├── assets/ # Images, fonts and other static assets
-│
-├── pages/ # HTML pages
-│
-├── scripts/ # JavaScript source files
-│
-├── styles/ # SCSS/CSS source files
-│
-├── dist/ # Generated build files
-│
-├── .editorconfig # Editor configuration
-├── .gitignore # Git ignored files
-├── .htaccess # Apache rewrite rules
-├── .prettierrc.json # Prettier configuration
-├── apache.conf # Apache configuration
-├── certification.html # Certification page
-├── contact.html # Contact page
-├── gallery.html # Gallery page
-├── index.html # Main/home page
-├── projects.html # Projects page
-├── about.html # About page
-├── under-construction.html # Under construction page
-├── docker-compose.yml # Docker configuration
-├── eslint.config.mjs # ESLint configuration
-├── gulpfile.js # Gulp build tasks
-├── package.json # Dependencies and npm scripts
-└── README.md # Project documentation
+│   └── workflows/                 # GitHub Actions workflows
+├── assets/                        # Images, fonts and other static assets
+├── pages/                         # HTML pages
+├── scripts/                       # JavaScript source files
+├── styles/                        # SCSS/CSS source files
+├── dist/                          # Generated build files
+├── .editorconfig                  # Editor configuration
+├── .gitignore                     # Git ignored files
+├── .htaccess                      # Apache rewrite rules
+├── .prettierrc.json               # Prettier configuration
+├── apache.conf                    # Apache configuration
+├── certification.html             # Certification page
+├── contact.html                   # Contact page
+├── gallery.html                   # Gallery page
+├── index.html                     # Main/home page
+├── projects.html                  # Projects page
+├── about.html                     # About page
+├── under-construction.html        # Under construction page
+├── docker-compose.yml             # Docker configuration
+├── eslint.config.mjs              # ESLint configuration
+├── gulpfile.js                    # Gulp build tasks
+├── package.json                   # Dependencies and npm scripts
+└── README.md                      # Project documentation
+```
 
 Note: dist/ contains generated files. In most cases, developers should modify the source files in styles/ and scripts/ rather than editing compiled files directly.
 
@@ -91,11 +87,11 @@ Note: dist/ contains generated files. In most cases, developers should modify th
 You can verify your installations with:
 
 ```bash
-node --version
-npm --version
-yarn --version
-git --version
-docker --version
+node    --version
+npm     --version
+yarn    --version
+git     --version
+docker  --version
 ```
 
 ## Setup
