@@ -146,13 +146,17 @@
 			<div
 				id="hero-slider"
 				class="splide position-absolute z-0"
-				aria-label="Company hero image carousel"
+				role="region"
+				aria-roledescription="carousel"
+				aria-label="Company hero"
 			>
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li
 							class="splide__slide"
-							aria-label="Hero Slider Image 1"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="Slide 1 of 3"
 						>
 							<img
 								src="./assets/images/slider/slider-image-1.jpg"
@@ -162,7 +166,9 @@
 						</li>
 						<li
 							class="splide__slide"
-							aria-label="Hero Slider Image 2"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="Slide 2 of 3"
 						>
 							<img
 								src="./assets/images/slider/slider-image-3.jpg"
@@ -172,7 +178,9 @@
 						</li>
 						<li
 							class="splide__slide"
-							aria-label="Hero Slider Image 3"
+							role="group"
+							aria-roledescription="slide"
+							aria-label="Slide 3 of 3"
 						>
 							<img
 								src="./assets/images/slider/slider-image-4.jpg"
@@ -210,7 +218,10 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span
+							class="navbar-toggler-icon"
+							aria-hidden="true"
+						></span>
 					</button>
 
 					<!-- Navigation Links -->
@@ -226,6 +237,7 @@
 								<a
 									href="./"
 									class="nav-link text-uppercase fw-bold text-white"
+									aria-current="page"
 								>
 									Home
 								</a>
@@ -301,11 +313,7 @@
 		</section>
 
 		<!-- Our Services Section -->
-<<<<<<< HEAD
-		<section id="our-services">
-=======
-		<section aria-labelledby="services-heading">
->>>>>>> ec88e33 (feat: aria accessibility)
+		<section id="our-services" aria-labelledby="services-heading">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6 offset-md-3 text-center">
@@ -600,11 +608,7 @@
 		</section>
 
 		<!-- Our Footer Section -->
-<<<<<<< HEAD
-		<section class="footer bg-black">
-=======
-		<footer class="bg-black" aria-labelledby="footer-heading">
->>>>>>> ec88e33 (feat: aria accessibility)
+		<section class="footer bg-black" aria-labelledby="footer-heading">
 			<div class="container">
 				<div class="row">
 					<!-- Company Information -->
@@ -622,15 +626,12 @@
 							Sheiks & Bishops
 						</h2>
 
-						<p class="text-white">
+						<p
+							class="text-white"
+							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+						>
 							Phone Number:<br />
-							<a
-								href="tel:+2348033479691"
-								class="text-white"
-								aria-label="Call Sheiks and Bishops at +234 803 347 9691"
-							>
-								+234 803 347 9691
-							</a>
+							+234 803 347 9691
 						</p>
 
 						<p class="text-white">
@@ -640,18 +641,21 @@
 
 						<p class="text-white">
 							Email Address:<br />
-							<a
-								href="mailto:info@sheiksandbishop.com"
-								class="text-white"
-							>
-								info@sheiksandbishop.com
-							</a>
+							info@sheiksandbishop.com
 						</p>
 					</div>
 
 					<!-- Quick Links -->
-					<div class="col-md-3 footer-links mb-5 mb-md-0">
-						<h3 class="text-white fw-normal mb-4">Quick Links</h3>
+					<div
+						class="col-md-3 footer-links mb-5 mb-md-0"
+						aria-labelledby="quick-links-heading"
+					>
+						<h3
+							id="quick-links-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Quick Links
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -702,8 +706,16 @@
 					</div>
 
 					<!-- Services -->
-					<div class="col-md-4 footer-links">
-						<h3 class="text-white fw-normal mb-4">Services</h3>
+					<div
+						class="col-md-4 footer-links"
+						aria-labelledby="footer-services-heading"
+					>
+						<h3
+							id="footer-services-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Services
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -745,6 +757,6 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</section>
 	</body>
 </html>

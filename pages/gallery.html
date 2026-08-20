@@ -189,10 +189,14 @@
 	</head>
 	<body>
 		<!-- Our Hero Section -->
-		<section class="bg-black overflow-hidden position-relative">
+		<section
+			aria-labelledby="gallery-heading"
+			class="bg-black overflow-hidden position-relative"
+		>
 			<img
 				src="./assets/images/slider/slider-1.jpeg"
 				alt="Hero Image"
+				aria-hidden="true"
 				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
 			/>
 
@@ -222,7 +226,10 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span
+							class="navbar-toggler-icon"
+							aria-hidden="true"
+						></span>
 					</button>
 
 					<!-- Navigation Links -->
@@ -262,6 +269,7 @@
 								<a
 									href="./gallery"
 									class="nav-link text-uppercase fw-bold text-white"
+									aria-current="page"
 								>
 									Gallery
 								</a>
@@ -288,6 +296,7 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<h1
+							id="gallery-heading"
 							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
 						>
 							Gallery
@@ -298,7 +307,7 @@
 		</section>
 
 		<!-- About Section -->
-		<section>
+		<section aria-label="gallery-intro">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1 text-center">
@@ -315,11 +324,12 @@
 		</section>
 
 		<!-- Gallery Section 1 -->
-		<section class="pt-0">
+		<section class="pt-0" aria-labelledby="interpol-assembly-heading">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 offset-md-2">
 						<h2
+							id="interpol-assembly-heading"
 							class="display-6 text-uppercase fw-bold mb-5 separator text-center"
 						>
 							INTERPOL General Assembly in Vienna, Austria
@@ -368,11 +378,12 @@
 		</section>
 
 		<!-- Gallery Section 2 -->
-		<section class="pt-0">
+		<section class="pt-0" aria-labelledby="abu-dhabi-heading">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 offset-md-2">
 						<h2
+							id="abu-dhabi-heading"
 							class="display-6 text-uppercase fw-bold mb-5 separator text-center"
 						>
 							Sheiks & Bishops CEO With Former Interpol President
@@ -404,11 +415,12 @@
 		</section>
 
 		<!-- Gallery Section 4 -->
-		<section class="pt-0">
+		<section class="pt-0" aria-labelledby="interpol-network-heading">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 offset-md-2">
 						<h2
+							id="interpol-network-heading"
 							class="display-6 text-uppercase fw-bold mb-5 separator text-center"
 						>
 							Upgrade and Commisioning of the Interpol i-24/7
@@ -458,7 +470,7 @@
 		</section>
 
 		<!-- Our Footer Section -->
-		<section class="footer bg-black">
+		<section class="footer bg-black" aria-labelledby="footer-heading">
 			<div class="container">
 				<div class="row">
 					<!-- Company Information -->
@@ -470,14 +482,18 @@
 						/>
 
 						<h2
+							id="footer-heading"
 							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
 						>
 							Sheiks & Bishops
 						</h2>
 
-						<p class="text-white">
+						<p
+							class="text-white"
+							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+						>
 							Phone Number:<br />
-							+2348033479691
+							+234 803 347 9691
 						</p>
 
 						<p class="text-white">
@@ -492,8 +508,16 @@
 					</div>
 
 					<!-- Quick Links -->
-					<div class="col-md-3 footer-links mb-5 mb-md-0">
-						<h3 class="text-white fw-normal mb-4">Quick Links</h3>
+					<div
+						class="col-md-3 footer-links mb-5 mb-md-0"
+						aria-labelledby="quick-links-heading"
+					>
+						<h3
+							id="quick-links-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Quick Links
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -544,8 +568,16 @@
 					</div>
 
 					<!-- Services -->
-					<div class="col-md-4 footer-links">
-						<h3 class="text-white fw-normal mb-4">Services</h3>
+					<div
+						class="col-md-4 footer-links"
+						aria-labelledby="footer-services-heading"
+					>
+						<h3
+							id="footer-services-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Services
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
