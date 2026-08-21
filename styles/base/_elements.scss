@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+body {
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	padding: 100px 0;
+}
