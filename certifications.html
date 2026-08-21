@@ -160,14 +160,38 @@
 				background: rgba(0, 0, 0, 0.55);
 			}
 
-			.footer-watermark {
-				font-weight: 800;
-				font-size: 9vw;
-				color: rgba(255, 255, 255, 0.1);
-				white-space: nowrap;
-				line-height: 1;
-				text-align: center;
-				letter-spacing: 2px;
+			.footer.bg-black {
+				background-color: #000;
+			}
+
+			.footer.bg-black p {
+				color: white !important;
+				font-size: 16px;
+				line-height: 1.6;
+			}
+
+			.footer.bg-black h3 {
+				font-size: 28px;
+			}
+
+			.footer.bg-black ul a {
+				font-size: 18px;
+				color: #888 !important;
+				transition: color 0.3s ease;
+			}
+
+			.footer.bg-black ul a:hover {
+				color: #fff !important;
+			}
+
+			.footer .footer-links {
+				padding-top: 118px;
+			}
+
+			@media (max-width: 767.98px) {
+				.footer .footer-links {
+					padding-top: 0;
+				}
 			}
 		</style>
 	</head>
@@ -488,8 +512,8 @@
 						>
 							Sheiks & Bishops
 						</h2>
-
-						<p
+						
+            <p
 							class="text-white"
 							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
 						>
