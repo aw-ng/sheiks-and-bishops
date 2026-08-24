@@ -198,10 +198,14 @@
 
 	<body>
 		<!-- Our Hero Section -->
-		<section class="bg-black overflow-hidden position-relative">
+		<section
+			class="bg-black overflow-hidden position-relative"
+			aria-labelledby="page-title"
+		>
 			<img
 				src="./assets/images/certifications-board.jpg"
 				alt="Wall of framed certifications and awards"
+				aria-hidden="true"
 				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
 			/>
 
@@ -235,7 +239,10 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span
+							class="navbar-toggler-icon"
+							aria-hidden="true"
+						></span>
 					</button>
 
 					<!-- Navigation Links -->
@@ -302,11 +309,14 @@
 		</section>
 
 		<!-- Our Journey Section -->
-		<section>
+		<section aria-labelledby="journey-heading">
 			<div class="container">
 				<div class="row gy-4 mb-5">
 					<div class="col-lg-4">
-						<h2 class="text-uppercase fw-bold separator-start mb-0">
+						<h2
+							id="journey-heading"
+							class="text-uppercase fw-bold separator-start mb-0"
+						>
 							Our Journey to Excellence.
 						</h2>
 					</div>
@@ -321,11 +331,13 @@
 				</div>
 
 				<!-- Certification Grid -->
-				<div class="row gy-4">
+				<div class="row gy-4" aria-label="certifications">
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div class="cert-card" aria-labelledby="cert-ceh">
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Certified Ethical Hacker (CEH)</h3>
+							<h3 id="cert-ceh">
+								Certified Ethical Hacker (CEH)
+							</h3>
 							<p class="cert-issuer">EC-Council</p>
 							<img
 								src="./assets/images/certifications/certified-ethical-hacker.jpeg"
@@ -335,9 +347,11 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div class="cert-card" aria-labelledby="cert-cisco">
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Cisco Certified Internetwork Expert</h3>
+							<h3 id="cert-cisco">
+								Cisco Certified Internetwork Expert
+							</h3>
 							<p class="cert-issuer">Cisco</p>
 							<img
 								src="./assets/images/certifications/cisco-certified-internet-expert.png"
@@ -347,9 +361,11 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div class="cert-card" aria-labelledby="cert-forensics">
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Computer Forensics Certification</h3>
+							<h3 id="cert-forensics">
+								Computer Forensics Certification
+							</h3>
 							<p class="cert-issuer">
 								Computer Forensic Institute
 							</p>
@@ -361,9 +377,11 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div class="cert-card" aria-labelledby="cert-interpol">
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>INTERPOL I-24/7 Registered Expert</h3>
+							<h3 id="cert-interpol">
+								INTERPOL I-24/7 Registered Expert
+							</h3>
 							<p class="cert-issuer">INTERPOL</p>
 							<img
 								src="./assets/images/certifications/interpol-i-24-7.png"
@@ -373,9 +391,9 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div class="cert-card" aria-labelledby="cert-iss">
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>ISS World Certification</h3>
+							<h3 id="cert-iss">ISS World Certification</h3>
 							<p class="cert-issuer">ISS World</p>
 							<img
 								src="./assets/images/certifications/iss-world.png"
@@ -385,9 +403,14 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div
+							class="cert-card"
+							aria-labelledby="cert-microsoft-excellence"
+						>
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Microsoft Certificate of Excellence</h3>
+							<h3 id="cert-microsoft-excellence">
+								Microsoft Certificate of Excellence
+							</h3>
 							<p class="cert-issuer">Microsoft</p>
 							<img
 								src="./assets/images/certifications/microsoft-certificate-of-excellence.png"
@@ -397,9 +420,14 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div
+							class="cert-card"
+							aria-labelledby="cert-microsoft-associate"
+						>
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Microsoft Certified Associate</h3>
+							<h3 id="cert-microsoft-associate">
+								Microsoft Certified Associate
+							</h3>
 							<p class="cert-issuer">Microsoft</p>
 							<img
 								src="./assets/images/certifications/microsoft-certified-associate.webp"
@@ -409,9 +437,14 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
-						<div class="cert-card">
+						<div
+							class="cert-card"
+							aria-labelledby="cert-microsoft-solutions"
+						>
 							<p class="cert-org">S&amp;B Group</p>
-							<h3>Microsoft Certified Solutions Associate</h3>
+							<h3 id="cert-microsoft-solutions">
+								Microsoft Certified Solutions Associate
+							</h3>
 							<p class="cert-issuer">Microsoft</p>
 							<img
 								src="./assets/images/certifications/microsoft-certified-solutions-associate.png"
@@ -428,16 +461,19 @@
 		<section
 			class="bg-black position-relative overflow-hidden"
 			style="padding: 125px 0"
+			aria-labelledby="cta-heading"
 		>
 			<img
 				src="./assets/images/hand-shake.jpg"
 				alt="People shaking hands"
+				aria-hidden="true"
 				class="img-fluid object-fit-cover opacity-50 position-absolute top-0 start-0 w-100 h-100 z-0"
 			/>
 			<div class="container z-1 position-relative">
 				<div class="row">
 					<div class="col-sm-6 offset-sm-3 d-flex flex-column">
 						<h2
+							id="cta-heading"
 							class="text-uppercase fw-bold mb-3 text-center text-white"
 						>
 							Let's Build Something Secure
@@ -449,6 +485,7 @@
 						<a
 							href="./contact"
 							class="btn btn-outline-light text-uppercase align-self-center px-4 py-3"
+							aria-describedby="cta-description"
 						>
 							Request a Consultation
 						</a>
@@ -458,7 +495,7 @@
 		</section>
 
 		<!-- Our Footer Section -->
-		<section class="footer bg-black">
+		<section class="footer bg-black" aria-labelledby="footer-heading">
 			<div class="container">
 				<div class="row">
 					<!-- Company Information -->
@@ -470,12 +507,16 @@
 						/>
 
 						<h2
+							id="footer-heading"
 							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
 						>
 							Sheiks & Bishops
 						</h2>
 
-						<p class="text-white">
+						<p
+							class="text-white"
+							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+						>
 							Phone Number:<br />
 							+2348033479691
 						</p>
@@ -492,8 +533,16 @@
 					</div>
 
 					<!-- Quick Links -->
-					<div class="col-md-3 footer-links mb-5 mb-md-0">
-						<h3 class="text-white fw-normal mb-4">Quick Links</h3>
+					<div
+						class="col-md-3 footer-links mb-5 mb-md-0"
+						aria-labelledby="quick-links-heading"
+					>
+						<h3
+							id="quick-links-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Quick Links
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -544,8 +593,16 @@
 					</div>
 
 					<!-- Services -->
-					<div class="col-md-4 footer-links">
-						<h3 class="text-white fw-normal mb-4">Services</h3>
+					<div
+						class="col-md-4 footer-links"
+						aria-labelledby="footer-services-heading"
+					>
+						<h3
+							id="footer-services-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Services
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
