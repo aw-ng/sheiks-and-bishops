@@ -46,10 +46,14 @@
 	</head>
 	<body>
 		<!-- Our Hero Section -->
-		<section class="bg-black overflow-hidden position-relative">
+		<section
+			class="bg-black overflow-hidden position-relative"
+			aria-labelledby="page-title"
+		>
 			<img
 				src="./assets/images/slider/slider-image-4.jpg"
 				alt="Hero Image"
+				aria-hidden="true"
 				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
 			/>
 
@@ -79,7 +83,10 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span
+							class="navbar-toggler-icon"
+							aria-hidden="true"
+						></span>
 					</button>
 
 					<!-- Navigation Links -->
@@ -101,6 +108,7 @@
 								<a
 									href="./about"
 									class="nav-link text-uppercase fw-bold text-white"
+									aria-current="page"
 								>
 									About Us
 								</a>
@@ -145,6 +153,7 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<h1
+							id="page-title"
 							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
 						>
 							About Us
@@ -155,11 +164,11 @@
 		</section>
 
 		<!-- About Section -->
-		<section>
+		<section aria-labelledby="about-introduction">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-8 offset-md-2 text-center">
-						<p class="fs-3 lead">
+						<p class="fs-3 lead" id="about-introduction">
 							For years, Sheiks & Bishops has partnered with the
 							Federal Government of Nigeria to deliver secure,
 							scalable, and reliable IT security solutions. We
@@ -175,6 +184,7 @@
 				<div class="row my-5 gx-5 gy-4">
 					<div class="col-md-6">
 						<h2
+							id="history-heading"
 							class="display-6 text-uppercase separator-start fw-bold mb-5"
 						>
 							Our History
@@ -210,9 +220,10 @@
 
 				<br />
 
-				<div class="row my-5 gx-5">
+				<div class="row my-5 gx-5" aria-labelledby="vision-heading">
 					<div class="col-md-10 offset-md-1 text-center">
 						<h2
+							id="vision-heading"
 							class="display-6 text-uppercase separator fw-bold mb-5"
 						>
 							Our Vision
@@ -228,9 +239,13 @@
 
 				<br />
 
-				<div class="row my-5 gx-5 gy-4">
+				<div
+					class="row my-5 gx-5 gy-4"
+					aria-labelledby="mission-heading"
+				>
 					<div class="col-md-6">
 						<h2
+							id="mission-heading"
 							class="display-6 text-uppercase separator-start fw-bold mb-5"
 						>
 							Our Mission
@@ -262,11 +277,12 @@
 		</section>
 
 		<!-- Our Team Section -->
-		<section class="pt-0">
+		<section class="pt-0" aria-labelledby="management-heading">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6 offset-md-3 text-center">
 						<h2
+							id="management-heading"
 							class="display-6 text-uppercase fw-bold mb-5 separator"
 						>
 							Company Management
@@ -291,7 +307,7 @@
 		</section>
 
 		<!-- Our Footer Section -->
-		<section class="footer bg-black">
+		<section class="footer bg-black" aria-labelledby="footer-heading">
 			<div class="container">
 				<div class="row">
 					<!-- Company Information -->
@@ -303,12 +319,16 @@
 						/>
 
 						<h2
+							id="footer-heading"
 							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
 						>
 							Sheiks & Bishops
 						</h2>
 
-						<p class="text-white">
+						<p
+							class="text-white"
+							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+						>
 							Phone Number:<br />
 							+2348033479691
 						</p>
@@ -325,8 +345,16 @@
 					</div>
 
 					<!-- Quick Links -->
-					<div class="col-md-3 footer-links mb-5 mb-md-0">
-						<h3 class="text-white fw-normal mb-4">Quick Links</h3>
+					<div
+						class="col-md-3 footer-links mb-5 mb-md-0"
+						aria-labelledby="quick-links-heading"
+					>
+						<h3
+							id="quick-links-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Quick Links
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -377,8 +405,16 @@
 					</div>
 
 					<!-- Services -->
-					<div class="col-md-4 footer-links">
-						<h3 class="text-white fw-normal mb-4">Services</h3>
+					<div
+						class="col-md-4 footer-links"
+						aria-labelledby="footer-services-heading"
+					>
+						<h3
+							id="footer-services-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Services
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
