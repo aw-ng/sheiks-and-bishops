@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.footer.bg-black {
+footer.bg-black {
 	background-color: #000;
 
 	p {
@@ -26,12 +26,12 @@
 	}
 }
 
-.footer .footer-links {
+footer .footer-links {
 	padding-top: 118px;
 }
 
 @media (max-width: 767.98px) {
-	.footer .footer-links {
+	footer .footer-links {
 		padding-top: 0;
 	}
 }
