@@ -1,40 +1,5 @@
 @use '../abstracts' as *;
 
-.logo-badge {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 56px;
-	height: 56px;
-	background-color: #fff;
-	border: 2px solid #ff4d6d;
-	border-radius: 6px;
-	color: #ff4d6d;
-	font-weight: 800;
-	font-size: 22px;
-	letter-spacing: 0.5px;
-
-	&-lg {
-		width: 72px;
-		height: 72px;
-		font-size: 28px;
-	}
-}
-
-.filter-tabs {
-	.tab {
-		color: #999;
-		cursor: pointer;
-		padding-bottom: 12px;
-		font-size: 14px;
-
-		&.active{
-			color: #000;
-			border-bottom: 3px solid orange;
-		}
-	}
-}
-
 .cert-card {
 	background-color: #fff;
 	color: #000;
@@ -68,18 +33,4 @@
 		background-color: #fff;
 		border-radius: 3px;
 	}
-}
-
-.cta-overlay {
-	background: rgba(0, 0, 0, 0.55);
-}
-
-.footer-watermark {
-	font-weight: 800;
-	font-size: 9vw;
-	color: rgba(255, 255, 255, 0.1);
-	white-space: nowrap;
-	line-height: 1;
-	text-align: center;
-	letter-spacing: 2px;
 }
