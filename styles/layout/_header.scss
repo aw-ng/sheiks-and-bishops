@@ -18,3 +18,7 @@
 .container.z-1.position-relative {
 	z-index: 0 !important;
 }
+
+.nav-link.is-current-page {
+	border-bottom: 3px solid $theme-primary;
+}
