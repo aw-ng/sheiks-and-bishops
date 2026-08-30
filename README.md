@@ -1,6 +1,8 @@
-# SBP
+# sheiks-and-bishops
 
 This repo contains HTML markup that is responsible for the look and feel of www.sheiksandbishop.com.
+
+> NB: Please do NOT make changes to pages found in the root folder. If you need to update any, please update it in the __pages__ folder.
 
 ## Requirements
 
