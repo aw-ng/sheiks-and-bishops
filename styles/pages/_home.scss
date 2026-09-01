@@ -1,1 +1,14 @@
 @use '../abstracts' as *;
+
+.icon-box {
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+	footer .footer-links {
+		padding-top: 0;
+	}
+}
