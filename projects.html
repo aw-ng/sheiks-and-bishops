@@ -32,6 +32,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
 		/>
+		<link rel="stylesheet" href="./dist/main.css" type="text/css" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"
 			defer
@@ -42,111 +43,17 @@
 		></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript" src="./dist/main.min.js" defer></script>
-		<style type="text/css">
-			body {
-				font-family: 'Montserrat', sans-serif;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-				margin: 0;
-				padding: 0;
-			}
-
-			section {
-				padding: 100px 0;
-			}
-
-			.separator::after,
-			.separator-start::after {
-				content: '';
-				display: block;
-				width: 60px;
-				height: 3px;
-				background-color: orange;
-				margin: 20px auto 0 auto;
-			}
-
-			.separator-start::after {
-				margin: 20px 0 0 0;
-			}
-
-			.image-box {
-				height: 360px;
-				background-color: #f0f0f0;
-				border-radius: 5px;
-			}
-
-			.icon-box {
-				border: 1px solid #ccc;
-				padding: 20px;
-				text-align: center;
-				border-radius: 5px;
-			}
-
-			.footer.bg-black {
-				background-color: #000;
-			}
-
-			.footer.bg-black p {
-				color: white !important;
-				font-size: 16px;
-				line-height: 1.6;
-			}
-
-			.footer.bg-black h3 {
-				font-size: 28px;
-			}
-
-			.footer.bg-black ul a {
-				font-size: 18px;
-				color: #888 !important;
-				transition: color 0.3s ease;
-			}
-
-			.footer.bg-black ul a:hover {
-				color: #fff !important;
-			}
-
-			.footer .footer-links {
-				padding-top: 118px;
-			}
-
-			@media (max-width: 767.98px) {
-				.footer .footer-links {
-					padding-top: 0;
-				}
-			}
-
-			.navbar-toggler {
-				filter: invert(1);
-			}
-			@media (max-width: 991.98px) {
-				.timeline {
-					margin-bottom: 70px;
-				}
-			}
-
-			@media (max-width: 991.98px) {
-				.navbar-collapse {
-					background: #000;
-					padding: 1rem;
-					margin-top: 1rem;
-					border-radius: 8px;
-					position: relative;
-					z-index: 9999;
-				}
-			}
-
-			.container.z-1.position-relative {
-				z-index: 0 !important;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- Our Hero Section -->
-		<section class="bg-black overflow-hidden position-relative">
+		<section
+			class="bg-black overflow-hidden position-relative"
+			aria-labelledby="page-title"
+		>
 			<img
 				src="./assets/images/slider/slider-image-2.jpg"
 				alt="Hero Image"
+				aria-hidden="true"
 				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
 			/>
 
@@ -176,7 +83,10 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<span
+							class="navbar-toggler-icon"
+							aria-hidden="true"
+						></span>
 					</button>
 
 					<!-- Navigation Links -->
@@ -206,7 +116,8 @@
 							<li class="nav-item">
 								<a
 									href="./projects"
-									class="nav-link text-uppercase fw-bold text-white"
+									class="nav-link is-current-page text-uppercase fw-bold text-white"
+									aria-current="page"
 								>
 									Projects
 								</a>
@@ -242,6 +153,7 @@
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<h1
+							id="page-title"
 							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
 						>
 							Projects
@@ -252,7 +164,7 @@
 		</section>
 
 		<!-- About Section -->
-		<section>
+		<section aria-label="Projects">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-8 offset-md-2 text-center">
@@ -459,7 +371,7 @@
 			</div>
 		</section>
 
-		<section class="pt-0">
+		<section class="pt-0" aria-label="Project timeline">
 			<div class="container">
 				<div class="row gx-5">
 					<div class="timeline col-md-3">
@@ -468,6 +380,7 @@
 							alt="Nigeria Immigration Service (NIS) Headquarters Abuja"
 							class="rounded object-fit-cover mb-3"
 							height="150"
+							aria-hidden="true"
 						/>
 						<p>2017</p>
 						<p class="lead">
@@ -482,6 +395,7 @@
 							alt="Economic and Financial Crimes Commission (EFCC) Headquarters Abuja"
 							class="rounded object-fit-cover mb-3"
 							height="150"
+							aria-hidden="true"
 						/>
 						<p>2018</p>
 						<p class="lead">
@@ -497,6 +411,7 @@
 							alt="Independent Corrupt Practices Commission (ICPC) Headquarters Abuja"
 							class="rounded object-fit-cover mb-3"
 							height="150"
+							aria-hidden="true"
 						/>
 						<p>2022</p>
 						<p class="lead">
@@ -511,6 +426,7 @@
 							alt="Independent Corrupt Practices Commission (ICPC) Headquarters Abuja"
 							class="rounded object-fit-cover mb-3"
 							height="150"
+							aria-hidden="true"
 						/>
 						<p>2022 till date</p>
 						<p class="lead">
@@ -524,7 +440,7 @@
 		</section>
 
 		<!-- Our Footer Section -->
-		<section class="footer bg-black">
+		<footer aria-labelledby="footer-heading">
 			<div class="container">
 				<div class="row">
 					<!-- Company Information -->
@@ -536,12 +452,16 @@
 						/>
 
 						<h2
+							id="footer-heading"
 							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
 						>
 							Sheiks & Bishops
 						</h2>
 
-						<p class="text-white">
+						<p
+							class="text-white"
+							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+						>
 							Phone Number:<br />
 							+2348033479691
 						</p>
@@ -558,8 +478,16 @@
 					</div>
 
 					<!-- Quick Links -->
-					<div class="col-md-3 footer-links mb-5 mb-md-0">
-						<h3 class="text-white fw-normal mb-4">Quick Links</h3>
+					<div
+						class="col-md-3 footer-links mb-5 mb-md-0"
+						aria-labelledby="quick-links-heading"
+					>
+						<h3
+							id="quick-links-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Quick Links
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -610,8 +538,16 @@
 					</div>
 
 					<!-- Services -->
-					<div class="col-md-4 footer-links">
-						<h3 class="text-white fw-normal mb-4">Services</h3>
+					<div
+						class="col-md-4 footer-links"
+						aria-labelledby="footer-services-heading"
+					>
+						<h3
+							id="footer-services-heading"
+							class="text-white fw-normal mb-4"
+						>
+							Services
+						</h3>
 
 						<ul class="list-unstyled">
 							<li class="mb-3">
@@ -653,6 +589,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</footer>
 	</body>
 </html>
