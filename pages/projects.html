@@ -41,551 +41,565 @@
 		<script type="text/javascript" src="./dist/main.min.js" defer></script>
 	</head>
 	<body>
-		<!-- Our Hero Section -->
-		<section
-			class="bg-black overflow-hidden position-relative"
-			aria-labelledby="page-title"
-		>
-			<img
-				src="./assets/images/banners/busy-it-server-room.webp"
-				alt="Hero Image"
-				aria-hidden="true"
-				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
-				fetchpriority="high"
-			/>
-
-			<!-- Navigation -->
-			<nav
-				class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
-				aria-label="Main navigation"
+		<main id="main" class="position-relative" tabindex="-1">
+			<!-- Our Hero Section -->
+			<section
+				class="bg-black overflow-hidden position-relative"
+				aria-labelledby="page-title"
 			>
+				<img
+					src="./assets/images/banners/busy-it-server-room.webp"
+					alt="Hero Image"
+					aria-hidden="true"
+					class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
+					fetchpriority="high"
+				/>
+
+				<!-- Navigation -->
+				<nav
+					class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
+					aria-label="Main navigation"
+				>
+					<div class="container">
+						<!-- Logo -->
+						<a
+							class="navbar-brand"
+							href="./"
+							aria-label="Company logo"
+						>
+							<img
+								src="./assets/images/logo.webp"
+								height="80"
+								alt="Company logo"
+								id="logo"
+							/>
+						</a>
+
+						<!-- Hamburger Button -->
+						<button
+							class="navbar-toggler border-0 shadow-none"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#mainNav"
+							aria-controls="mainNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span
+								class="navbar-toggler-icon"
+								aria-hidden="true"
+							></span>
+						</button>
+
+						<!-- Navigation Links -->
+						<div
+							class="collapse navbar-collapse justify-content-end"
+							id="mainNav"
+						>
+							<ul class="navbar-nav gap-lg-4 text-center">
+								<li class="nav-item">
+									<a
+										href="./"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Home
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./about"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										About Us
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./projects"
+										class="nav-link is-current-page text-uppercase fw-bold text-white"
+										aria-current="page"
+									>
+										Projects
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./gallery"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Gallery
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./contact"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<!-- Hero Content -->
+				<div
+					class="container z-1 position-relative"
+					style="padding: 100px 0"
+				>
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<h1
+								id="page-title"
+								class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
+							>
+								Projects
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section aria-label="Projects">
 				<div class="container">
-					<!-- Logo -->
-					<a class="navbar-brand" href="./" aria-label="Company logo">
-						<img
-							src="./assets/images/logo.webp"
-							height="80"
-							alt="Company logo"
-							id="logo"
-						/>
-					</a>
-
-					<!-- Hamburger Button -->
-					<button
-						class="navbar-toggler border-0 shadow-none"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#mainNav"
-						aria-controls="mainNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span
-							class="navbar-toggler-icon"
-							aria-hidden="true"
-						></span>
-					</button>
-
-					<!-- Navigation Links -->
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="mainNav"
-					>
-						<ul class="navbar-nav gap-lg-4 text-center">
-							<li class="nav-item">
-								<a
-									href="./"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Home
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./about"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									About Us
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./projects"
-									class="nav-link is-current-page text-uppercase fw-bold text-white"
-									aria-current="page"
-								>
-									Projects
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./gallery"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Gallery
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./contact"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Contact
-								</a>
-							</li>
-						</ul>
+					<div class="row mb-5">
+						<div class="col-md-8 offset-md-2 text-center">
+							<p class="fs-3 lead">
+								We've been at the forefront of the fight against
+								crime, and we are proud to have played a role in
+								helping to make Nigeria a safer place for
+								everyone.
+							</p>
+						</div>
 					</div>
-				</div>
-			</nav>
 
-			<!-- Hero Content -->
-			<div
-				class="container z-1 position-relative"
-				style="padding: 100px 0"
-			>
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<h1
-							id="page-title"
-							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
-						>
-							Projects
-						</h1>
+					<div class="row my-5 gx-5 gy-4">
+						<div class="col-md-6">
+							<p>Project 01 - 1994</p>
+							<h2
+								class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
+							>
+								Vehicle Number Plate
+							</h2>
+							<p class="fs-5">
+								Prior to 1994, Nigeria had no standard vehicle
+								number plate. The plates were issued by the
+								various car manufacturers and were of different
+								sizes, colors, and designs. This made it
+								difficult for law enforcement agencies to
+								identify vehicles and track down criminals.
+							</p>
+
+							<p class="fs-5">
+								In 1994, our company innovatively introduced the
+								standard vehicle number plates which was
+								formally adopted by the Federal Government of
+								Nigeria in the same year to ensure uniformity
+								across the country.
+							</p>
+
+							<p class="fs-5">
+								This new design included a unique serial number
+								for each vehicle, which made it easier for law
+								enforcement agencies to identify vehicles and
+								track down criminals.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img
+								src="./assets/images/pages/projects/nigerian-plate-number.webp"
+								alt="National Vehicle Number Plates"
+								class="img-fluid rounded h-100 object-fit-cover"
+							/>
+						</div>
 					</div>
-				</div>
-			</div>
-		</section>
 
-		<!-- About Section -->
-		<section aria-label="Projects">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md-8 offset-md-2 text-center">
-						<p class="fs-3 lead">
-							We've been at the forefront of the fight against
-							crime, and we are proud to have played a role in
-							helping to make Nigeria a safer place for everyone.
-						</p>
+					<div class="row my-5 gx-5 gy-4">
+						<div class="col-md-6">
+							<p>Project 02 - 1999</p>
+							<h2
+								class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
+							>
+								Electronic Central Motor Register (ECMR)
+							</h2>
+							<p class="fs-5">
+								In 1999, our company developed and implemented
+								the Electronic Central Motor Register (ECMR)
+								system for the Nigeria Police Force.
+							</p>
+
+							<p class="fs-5">
+								This system was created to help law enforcement
+								agencies track down stolen vehicles and identify
+								vehicles involved in criminal activities. The
+								ECMR system has been instrumental in reducing
+								vehicle-related crimes in Nigeria.
+							</p>
+
+							<p class="fs-5">
+								The ECMR system as we know today is the Nation's
+								largest centralized database containing
+								information about all registered vehicles in the
+								country, including their owners, registration
+								details, and vehicle specifications.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img
+								src="./assets/images/pages/projects/ecmr-certificate.webp"
+								alt="Electronic Central Motor Register (ECMR)"
+								class="img-fluid rounded rounded-5 object-fit-cover"
+							/>
+						</div>
 					</div>
-				</div>
 
-				<div class="row my-5 gx-5 gy-4">
-					<div class="col-md-6">
-						<p>Project 01 - 1994</p>
-						<h2
-							class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
-						>
-							Vehicle Number Plate
-						</h2>
-						<p class="fs-5">
-							Prior to 1994, Nigeria had no standard vehicle
-							number plate. The plates were issued by the various
-							car manufacturers and were of different sizes,
-							colors, and designs. This made it difficult for law
-							enforcement agencies to identify vehicles and track
-							down criminals.
-						</p>
+					<div class="row my-5 gx-5 gy-4">
+						<div class="col-md-6">
+							<p>Project 03 - 2001</p>
+							<h2
+								class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
+							>
+								ICT Modernisation of the Nigeria Police Force
+								(NPF)
+							</h2>
+							<p class="fs-5">
+								As a step forward in the fight against crime,
+								our company was contracted by the Nigeria Police
+								Force in 2001 to implement a comprehensive ICT
+								modernization project.
+							</p>
 
-						<p class="fs-5">
-							In 1994, our company innovatively introduced the
-							standard vehicle number plates which was formally
-							adopted by the Federal Government of Nigeria in the
-							same year to ensure uniformity across the country.
-						</p>
+							<p class="fs-5">
+								This project aimed to enhance the operational
+								efficiency of the NPF by integrating advanced
+								information and communication technologies into
+								their daily operations.
+							</p>
 
-						<p class="fs-5">
-							This new design included a unique serial number for
-							each vehicle, which made it easier for law
-							enforcement agencies to identify vehicles and track
-							down criminals.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img
-							src="./assets/images/pages/projects/nigerian-plate-number.webp"
-							alt="National Vehicle Number Plates"
-							class="img-fluid rounded h-100 object-fit-cover"
-						/>
-					</div>
-				</div>
-
-				<div class="row my-5 gx-5 gy-4">
-					<div class="col-md-6">
-						<p>Project 02 - 1999</p>
-						<h2
-							class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
-						>
-							Electronic Central Motor Register (ECMR)
-						</h2>
-						<p class="fs-5">
-							In 1999, our company developed and implemented the
-							Electronic Central Motor Register (ECMR) system for
-							the Nigeria Police Force.
-						</p>
-
-						<p class="fs-5">
-							This system was created to help law enforcement
-							agencies track down stolen vehicles and identify
-							vehicles involved in criminal activities. The ECMR
-							system has been instrumental in reducing
-							vehicle-related crimes in Nigeria.
-						</p>
-
-						<p class="fs-5">
-							The ECMR system as we know today is the Nation's
-							largest centralized database containing information
-							about all registered vehicles in the country,
-							including their owners, registration details, and
-							vehicle specifications.
-						</p>
-					</div>
-					<div class="col-md-6">
-						<img
-							src="./assets/images/pages/projects/ecmr-certificate.webp"
-							alt="Electronic Central Motor Register (ECMR)"
-							class="img-fluid rounded rounded-5 object-fit-cover"
-						/>
-					</div>
-				</div>
-
-				<div class="row my-5 gx-5 gy-4">
-					<div class="col-md-6">
-						<p>Project 03 - 2001</p>
-						<h2
-							class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
-						>
-							ICT Modernisation of the Nigeria Police Force (NPF)
-						</h2>
-						<p class="fs-5">
-							As a step forward in the fight against crime, our
-							company was contracted by the Nigeria Police Force
-							in 2001 to implement a comprehensive ICT
-							modernization project.
-						</p>
-
-						<p class="fs-5">
-							This project aimed to enhance the operational
-							efficiency of the NPF by integrating advanced
-							information and communication technologies into
-							their daily operations.
-						</p>
-
-						<ul class="fs-5">
-							<li>Office of the Inspector General of Police</li>
-							<li>Administration Section</li>
-							<li>The Central Criminal Registry</li>
-							<li>Special Robbery Squad</li>
-							<li>Anti-Fraud</li>
-							<li>Interpol</li>
-							<li>CIB/SIB</li>
-							<li>Legal Section</li>
-							<li>Special Fraud Unit</li>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<img
-							src="./assets/images/pages/projects/ict-modernisation-1.webp"
-							alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-							class="img-fluid rounded object-fit-cover"
-						/>
-						<div class="row">
-							<div class="col-md-6">
-								<img
-									src="./assets/images/pages/projects/ict-modernisation-3.webp"
-									alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-									class="img-fluid rounded object-fit-cover mt-4"
-								/>
+							<ul class="fs-5">
+								<li>
+									Office of the Inspector General of Police
+								</li>
+								<li>Administration Section</li>
+								<li>The Central Criminal Registry</li>
+								<li>Special Robbery Squad</li>
+								<li>Anti-Fraud</li>
+								<li>Interpol</li>
+								<li>CIB/SIB</li>
+								<li>Legal Section</li>
+								<li>Special Fraud Unit</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<img
+								src="./assets/images/pages/projects/ict-modernisation-1.webp"
+								alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+								class="img-fluid rounded object-fit-cover"
+							/>
+							<div class="row">
+								<div class="col-md-6">
+									<img
+										src="./assets/images/pages/projects/ict-modernisation-3.webp"
+										alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+										class="img-fluid rounded object-fit-cover mt-4"
+									/>
+								</div>
+								<div class="col-md-6">
+									<img
+										src="./assets/images/pages/projects/ict-modernisation-5.webp"
+										alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+										class="img-fluid rounded object-fit-cover mt-4"
+									/>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<img
-									src="./assets/images/pages/projects/ict-modernisation-5.webp"
-									alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-									class="img-fluid rounded object-fit-cover mt-4"
-								/>
+						</div>
+					</div>
+
+					<div class="row mt-5 gx-5 gy-4">
+						<div class="col-md-6">
+							<p>Project 04 - 2016</p>
+							<h2
+								class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
+							>
+								Upgrade and Commissioning of the Interpol i-24/7
+								Secure Network System
+							</h2>
+							<p class="fs-5">
+								In 2016, Sheiks and Bishops Ltd upgraded the
+								INTERPOL i-24/7 Secure Network System at the
+								National Central Bureau (NCB) Abuja.
+							</p>
+
+							<p class="fs-5">
+								These systems provided real-time access to
+								Interpol's global database, allowing law
+								enforcement agencies in Nigeria to quickly and
+								efficiently identify and track criminals across
+								borders.
+							</p>
+
+							<p class="fs-5">
+								In 2026, these systems helped track down wanted
+								terrorists responsible for Boko Haram attacks
+								and financing of terrorism, thereby
+								significantly enhancing national security in
+								Nigeria.
+							</p>
+						</div>
+
+						<div class="col-md-6">
+							<img
+								src="./assets/images/pages/gallery/interpol-i247-commissioning/2.webp"
+								alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+								class="img-fluid rounded object-fit-cover"
+							/>
+							<div class="row">
+								<div class="col-md-6">
+									<img
+										src="./assets/images/pages/gallery/interpol-i247-commissioning/3.webp"
+										alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+										class="img-fluid rounded object-fit-cover mt-4"
+									/>
+								</div>
+								<div class="col-md-6">
+									<img
+										src="./assets/images/pages/gallery/interpol-i247-commissioning/4.webp"
+										alt="ICT Modernisation of the Nigeria Police Force (NPF)"
+										class="img-fluid rounded object-fit-cover mt-4"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div class="row mt-5 gx-5 gy-4">
-					<div class="col-md-6">
-						<p>Project 04 - 2016</p>
-						<h2
-							class="display-6 text-uppercase separator-start fw-bold mb-5 w-75"
-						>
-							Upgrade and Commissioning of the Interpol i-24/7
-							Secure Network System
-						</h2>
-						<p class="fs-5">
-							In 2016, Sheiks and Bishops Ltd upgraded the
-							INTERPOL i-24/7 Secure Network System at the
-							National Central Bureau (NCB) Abuja.
-						</p>
+			<section class="pt-0" aria-label="Project timeline">
+				<div class="container">
+					<div class="row gx-5">
+						<div class="timeline col-md-3">
+							<img
+								src="./assets/images/pages/projects/agencies/nigeria-immigration-service.webp"
+								alt="Nigeria Immigration Service (NIS) Headquarters Abuja"
+								class="rounded object-fit-cover mb-3"
+								height="150"
+								aria-hidden="true"
+							/>
+							<p>2017</p>
+							<p class="lead">
+								Extended the INTERPOL i-24/7 to Nigeria
+								Immigration Service (NIS) Headquarters Abuja.
+							</p>
+						</div>
 
-						<p class="fs-5">
-							These systems provided real-time access to
-							Interpol's global database, allowing law enforcement
-							agencies in Nigeria to quickly and efficiently
-							identify and track criminals across borders.
-						</p>
+						<div class="timeline col-md-3">
+							<img
+								src="./assets/images/pages/projects/agencies/economic-financial-crimes-commission.webp"
+								alt="Economic and Financial Crimes Commission (EFCC) Headquarters Abuja"
+								class="rounded object-fit-cover mb-3"
+								height="150"
+								aria-hidden="true"
+							/>
+							<p>2018</p>
+							<p class="lead">
+								Extended the INTERPOL i-24/7 to the Economic and
+								Financial Crimes Commission (EFCC) Headquarters
+								Abuja.
+							</p>
+						</div>
 
-						<p class="fs-5">
-							In 2026, these systems helped track down wanted
-							terrorists responsible for Boko Haram attacks and
-							financing of terrorism, thereby significantly
-							enhancing national security in Nigeria.
-						</p>
-					</div>
+						<div class="timeline col-md-3">
+							<img
+								src="./assets/images/pages/projects/agencies/icpc.webp"
+								alt="Independent Corrupt Practices Commission (ICPC) Headquarters Abuja"
+								class="rounded object-fit-cover mb-3"
+								height="150"
+								aria-hidden="true"
+							/>
+							<p>2022</p>
+							<p class="lead">
+								Extended the INTERPOL i-24/7 to ICPC, NAPTIP,
+								NDLEA, NFIU and the Nigerian Navy.
+							</p>
+						</div>
 
-					<div class="col-md-6">
-						<img
-							src="./assets/images/pages/gallery/interpol-i247-commissioning/2.webp"
-							alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-							class="img-fluid rounded object-fit-cover"
-						/>
-						<div class="row">
-							<div class="col-md-6">
-								<img
-									src="./assets/images/pages/gallery/interpol-i247-commissioning/3.webp"
-									alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-									class="img-fluid rounded object-fit-cover mt-4"
-								/>
-							</div>
-							<div class="col-md-6">
-								<img
-									src="./assets/images/pages/gallery/interpol-i247-commissioning/4.webp"
-									alt="ICT Modernisation of the Nigeria Police Force (NPF)"
-									class="img-fluid rounded object-fit-cover mt-4"
-								/>
-							</div>
+						<div class="timeline col-md-3">
+							<img
+								src="./assets/images/pages/projects/agencies/federal-republic-of-nigeria.webp"
+								alt="Federal Republic of Nigeria"
+								class="rounded object-fit-cover mb-3"
+								height="150"
+								aria-hidden="true"
+							/>
+							<p>2022 till date</p>
+							<p class="lead">
+								Implementing the Extension of the INTERPOL
+								i-24/7 to relevant Law Enforcement agencies and
+								for Revenue generation by the Federal Government
+								of Nigeria.
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="pt-0" aria-label="Project timeline">
-			<div class="container">
-				<div class="row gx-5">
-					<div class="timeline col-md-3">
-						<img
-							src="./assets/images/pages/projects/agencies/nigeria-immigration-service.webp"
-							alt="Nigeria Immigration Service (NIS) Headquarters Abuja"
-							class="rounded object-fit-cover mb-3"
-							height="150"
-							aria-hidden="true"
-						/>
-						<p>2017</p>
-						<p class="lead">
-							Extended the INTERPOL i-24/7 to Nigeria Immigration
-							Service (NIS) Headquarters Abuja.
-						</p>
-					</div>
+			<!-- Our Footer Section -->
+			<footer aria-labelledby="footer-heading">
+				<div class="container">
+					<div class="row">
+						<!-- Company Information -->
+						<div class="col-md-5 mb-5 mb-md-0">
+							<img
+								src="./assets/images/logo.webp"
+								alt="Company logo"
+								height="100"
+							/>
 
-					<div class="timeline col-md-3">
-						<img
-							src="./assets/images/pages/projects/agencies/economic-financial-crimes-commission.webp"
-							alt="Economic and Financial Crimes Commission (EFCC) Headquarters Abuja"
-							class="rounded object-fit-cover mb-3"
-							height="150"
-							aria-hidden="true"
-						/>
-						<p>2018</p>
-						<p class="lead">
-							Extended the INTERPOL i-24/7 to the Economic and
-							Financial Crimes Commission (EFCC) Headquarters
-							Abuja.
-						</p>
-					</div>
+							<h2
+								id="footer-heading"
+								class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
+							>
+								Sheiks & Bishops
+							</h2>
 
-					<div class="timeline col-md-3">
-						<img
-							src="./assets/images/pages/projects/agencies/icpc.webp"
-							alt="Independent Corrupt Practices Commission (ICPC) Headquarters Abuja"
-							class="rounded object-fit-cover mb-3"
-							height="150"
-							aria-hidden="true"
-						/>
-						<p>2022</p>
-						<p class="lead">
-							Extended the INTERPOL i-24/7 to ICPC, NAPTIP, NDLEA,
-							NFIU and the Nigerian Navy.
-						</p>
-					</div>
+							<p
+								class="text-white"
+								aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+							>
+								Phone Number:<br />
+								+2348033479691
+							</p>
 
-					<div class="timeline col-md-3">
-						<img
-							src="./assets/images/pages/projects/agencies/federal-republic-of-nigeria.webp"
-							alt="Federal Republic of Nigeria"
-							class="rounded object-fit-cover mb-3"
-							height="150"
-							aria-hidden="true"
-						/>
-						<p>2022 till date</p>
-						<p class="lead">
-							Implementing the Extension of the INTERPOL i-24/7 to
-							relevant Law Enforcement agencies and for Revenue
-							generation by the Federal Government of Nigeria.
-						</p>
+							<address class="text-white mb-4">
+								Contact Address:<br />
+								8 Iro Dan Musa Street, Asokoro, Abuja.
+							</address>
+
+							<p class="text-white">
+								Email Address:<br />
+								info@sheiksandbishop.com
+							</p>
+						</div>
+
+						<!-- Quick Links -->
+						<div
+							class="col-md-3 footer-links mb-5 mb-md-0"
+							aria-labelledby="quick-links-heading"
+						>
+							<h3
+								id="quick-links-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Quick Links
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./"
+										class="text-secondary text-decoration-none"
+									>
+										Home
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./about"
+										class="text-secondary text-decoration-none"
+									>
+										About Us
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./projects"
+										class="text-secondary text-decoration-none"
+									>
+										Projects
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./gallery"
+										class="text-secondary text-decoration-none"
+									>
+										Gallery
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./contact"
+										class="text-secondary text-decoration-none"
+									>
+										Contact Us
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Services -->
+						<div
+							class="col-md-4 footer-links"
+							aria-labelledby="footer-services-heading"
+						>
+							<h3
+								id="footer-services-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Services
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										IT Security
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Software
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Hardware
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Consultancy
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<!-- Our Footer Section -->
-		<footer aria-labelledby="footer-heading">
-			<div class="container">
-				<div class="row">
-					<!-- Company Information -->
-					<div class="col-md-5 mb-5 mb-md-0">
-						<img
-							src="./assets/images/logo.webp"
-							alt="Company logo"
-							height="100"
-						/>
-
-						<h2
-							id="footer-heading"
-							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
-						>
-							Sheiks & Bishops
-						</h2>
-
-						<p
-							class="text-white"
-							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
-						>
-							Phone Number:<br />
-							+2348033479691
-						</p>
-
-						<address class="text-white mb-4">
-							Contact Address:<br />
-							8 Iro Dan Musa Street, Asokoro, Abuja.
-						</address>
-
-						<p class="text-white">
-							Email Address:<br />
-							info@sheiksandbishop.com
-						</p>
-					</div>
-
-					<!-- Quick Links -->
-					<div
-						class="col-md-3 footer-links mb-5 mb-md-0"
-						aria-labelledby="quick-links-heading"
-					>
-						<h3
-							id="quick-links-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Quick Links
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./"
-									class="text-secondary text-decoration-none"
-								>
-									Home
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./about"
-									class="text-secondary text-decoration-none"
-								>
-									About Us
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./projects"
-									class="text-secondary text-decoration-none"
-								>
-									Projects
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./gallery"
-									class="text-secondary text-decoration-none"
-								>
-									Gallery
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./contact"
-									class="text-secondary text-decoration-none"
-								>
-									Contact Us
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Services -->
-					<div
-						class="col-md-4 footer-links"
-						aria-labelledby="footer-services-heading"
-					>
-						<h3
-							id="footer-services-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Services
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									IT Security
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Software
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Hardware
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Consultancy
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+			</footer>
+		</main>
 	</body>
 </html>

@@ -49,624 +49,633 @@
 		<script type="text/javascript" src="./dist/main.min.js" defer></script>
 	</head>
 	<body>
-		<!-- Our Hero Section -->
-		<section class="p-0 bg-black vh-100" aria-labelledby="hero-heading">
-			<!-- Slider -->
-			<div
-				id="hero-slider"
-				class="splide position-absolute z-0"
-				role="region"
-				aria-roledescription="carousel"
-				aria-label="Company hero"
-			>
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li
-							class="splide__slide"
-							role="group"
-							aria-roledescription="slide"
-							aria-label="Slide 1 of 3"
-						>
-							<img
-								src="./assets/images/slider/slider-image-1.webp"
-								alt="Command Center"
-								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
-								fetchpriority="high"
-							/>
-						</li>
-						<li
-							class="splide__slide"
-							role="group"
-							aria-roledescription="slide"
-							aria-label="Slide 2 of 3"
-						>
-							<img
-								src="./assets/images/slider/slider-image-2.webp"
-								alt="Server Room"
-								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-						<li
-							class="splide__slide"
-							role="group"
-							aria-roledescription="slide"
-							aria-label="Slide 3 of 3"
-						>
-							<img
-								src="./assets/images/slider/slider-image-3.webp"
-								alt="Command Center"
-								class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
-							/>
-						</li>
-					</ul>
+		<main id="main" class="position-relative" tabindex="-1">
+			<!-- Our Hero Section -->
+			<section class="p-0 bg-black vh-100" aria-labelledby="hero-heading">
+				<!-- Slider -->
+				<div
+					id="hero-slider"
+					class="splide position-absolute z-0"
+					role="region"
+					aria-roledescription="carousel"
+					aria-label="Company hero"
+				>
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li
+								class="splide__slide"
+								role="group"
+								aria-roledescription="slide"
+								aria-label="Slide 1 of 3"
+							>
+								<img
+									src="./assets/images/slider/slider-image-1.webp"
+									alt="Command Center"
+									class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+									fetchpriority="high"
+								/>
+							</li>
+							<li
+								class="splide__slide"
+								role="group"
+								aria-roledescription="slide"
+								aria-label="Slide 2 of 3"
+							>
+								<img
+									src="./assets/images/slider/slider-image-2.webp"
+									alt="Server Room"
+									class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+								/>
+							</li>
+							<li
+								class="splide__slide"
+								role="group"
+								aria-roledescription="slide"
+								aria-label="Slide 3 of 3"
+							>
+								<img
+									src="./assets/images/slider/slider-image-3.webp"
+									alt="Command Center"
+									class="img-fluid vh-100 h-100 w-100 object-fit-cover opacity-50"
+								/>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
 
-			<!-- Navigation -->
-			<nav
-				class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
-				aria-label="Main navigation"
+				<!-- Navigation -->
+				<nav
+					class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
+					aria-label="Main navigation"
+				>
+					<div class="container">
+						<!-- Logo -->
+						<a
+							class="navbar-brand"
+							href="./"
+							aria-label="Company logo"
+						>
+							<img
+								src="./assets/images/logo.webp"
+								height="80"
+								alt="Company logo"
+								id="logo"
+							/>
+						</a>
+
+						<!-- Hamburger Button -->
+						<button
+							class="navbar-toggler border-0 shadow-none"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#mainNav"
+							aria-controls="mainNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span
+								class="navbar-toggler-icon"
+								aria-hidden="true"
+							></span>
+						</button>
+
+						<!-- Navigation Links -->
+						<div
+							class="collapse navbar-collapse justify-content-end"
+							id="mainNav"
+						>
+							<ul
+								class="navbar-nav gap-lg-4 text-center"
+								aria-label="Primary navigation links"
+							>
+								<li class="nav-item">
+									<a
+										href="./"
+										class="nav-link is-current-page text-uppercase fw-bold text-white"
+										aria-current="page"
+									>
+										Home
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./about"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										About Us
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./projects"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Projects
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./gallery"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Gallery
+									</a>
+								</li>
+
+								<li class="nav-item">
+									<a
+										href="./contact"
+										class="nav-link text-uppercase fw-bold text-white"
+									>
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<!-- Hero Content -->
+				<div
+					class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative"
+				>
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<h1
+								id="hero-heading"
+								class="display-1 text-uppercase fw-regular fw-bold text-white mb-3"
+							>
+								Sheiks & Bishops Ltd.
+							</h1>
+						</div>
+						<div class="col-md-12">
+							<h2
+								class="display-6 text-uppercase fw-bold text-white mb-3"
+							>
+								Interpol Registered Subject Matter Expert
+							</h2>
+						</div>
+						<div class="col-md-12">
+							<p
+								class="text-white text-uppercase fw-bold fs-2 mt-0"
+							>
+								Systems Consultant to Interpol NCB Abuja
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Services Section -->
+			<section id="our-services" aria-labelledby="services-heading">
+				<div class="container">
+					<div class="row mb-5">
+						<div class="col-md-6 offset-md-3 text-center">
+							<h2
+								id="services-heading"
+								class="display-6 text-uppercase fw-bold mb-5 separator"
+							>
+								Our Services
+							</h2>
+							<p class="lead">
+								We provide smart, software security solutions
+								tailored to meet the needs of government and
+								corporate organizations.
+							</p>
+						</div>
+					</div>
+
+					<div class="row gx-5 gy-5">
+						<div class="col-md-6">
+							<div class="row gx-5 gy-5">
+								<div class="col-md-6">
+									<div class="icon-box">
+										<svg
+											class="w-6 h-6 text-gray-800 dark:text-white"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											width="72"
+											height="72"
+											fill="none"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke="red"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1"
+												d="M9.5 11H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h4.5M7 11V7a3 3 0 0 1 6 0v1.5m2.5 5.5v1.5l1 1m3.5-1a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
+											/>
+										</svg>
+
+										<h4 class="my-3 fw-bold text-uppercase">
+											Security Systems
+										</h4>
+										<p>
+											Design & implementation of advanced
+											security systems for government and
+											corporate bodies.
+										</p>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="icon-box">
+										<svg
+											class="w-6 h-6 text-gray-800 dark:text-white"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											width="72"
+											height="72"
+											fill="none"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke="red"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1"
+												d="M5.35709 16V5.78571c0-.43393.34822-.78571.77777-.78571H18.5793c.4296 0 .7778.35178.7778.78571V16M5.35709 16h-1c-.55229 0-1 .4477-1 1v1c0 .5523.44771 1 1 1H20.3571c.5523 0 1-.4477 1-1v-1c0-.5523-.4477-1-1-1h-1M5.35709 16H19.3571M9.35709 8l2.62501 2.5L9.35709 13m4.00001 0h2"
+											/>
+										</svg>
+
+										<h4 class="my-3 fw-bold text-uppercase">
+											Software
+										</h4>
+										<p>
+											Design & development of security
+											software solutions needed by
+											government and corporate bodies.
+										</p>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="icon-box">
+										<svg
+											class="w-6 h-6 text-gray-800 dark:text-white"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											width="72"
+											height="72"
+											fill="none"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke="red"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1"
+												d="M5 12a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1M5 12h14M5 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1m-2 3h.01M14 15h.01M17 9h.01M14 9h.01"
+											/>
+										</svg>
+
+										<h4 class="my-3 fw-bold text-uppercase">
+											Hardware
+										</h4>
+										<p>
+											Supply, installation and support for
+											quality hardware systems needed for
+											security compliance.
+										</p>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="icon-box">
+										<svg
+											class="w-6 h-6 text-gray-800 dark:text-white"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+											width="72"
+											height="72"
+											fill="none"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke="red"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1"
+												d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+											/>
+											<path
+												stroke="red"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="1"
+												d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+											/>
+										</svg>
+
+										<h4 class="my-3 fw-bold text-uppercase">
+											Consultancy
+										</h4>
+										<p>
+											Interpol Systems Expert guidance and
+											support to help your organization
+											achieve its security goals.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<img
+								src="assets/images/pages/home/canvas-listing-of-services.webp"
+								alt="Our Services"
+								class="img-fluid rounded h-100"
+								object-fit="fill"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Certifications Section -->
+			<section
+				class="bg-black"
+				aria-labelledby="certifications-heading"
+				style="padding: 150px 0"
 			>
 				<div class="container">
-					<!-- Logo -->
-					<a class="navbar-brand" href="./" aria-label="Company logo">
-						<img
-							src="./assets/images/logo.webp"
-							height="80"
-							alt="Company logo"
-							id="logo"
-						/>
-					</a>
-
-					<!-- Hamburger Button -->
-					<button
-						class="navbar-toggler border-0 shadow-none"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#mainNav"
-						aria-controls="mainNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span
-							class="navbar-toggler-icon"
-							aria-hidden="true"
-						></span>
-					</button>
-
-					<!-- Navigation Links -->
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="mainNav"
-					>
-						<ul
-							class="navbar-nav gap-lg-4 text-center"
-							aria-label="Primary navigation links"
-						>
-							<li class="nav-item">
-								<a
-									href="./"
-									class="nav-link is-current-page text-uppercase fw-bold text-white"
-									aria-current="page"
-								>
-									Home
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./about"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									About Us
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./projects"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Projects
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./gallery"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Gallery
-								</a>
-							</li>
-
-							<li class="nav-item">
-								<a
-									href="./contact"
-									class="nav-link text-uppercase fw-bold text-white"
-								>
-									Contact
-								</a>
-							</li>
-						</ul>
+					<div class="row gx-5 gy-5">
+						<div class="col-md-6">
+							<h2
+								id="certifications-heading"
+								class="display-6 text-uppercase fw-bold mb-5 separator-start text-white"
+							>
+								Certifications
+							</h2>
+							<p class="display-6 text-white">
+								Here at Sheiks & Bishops, we ensure we carry out
+								standard services and therefore have the
+								required certifications to do this.
+							</p>
+							<a
+								href="./certifications"
+								class="p-3 text-uppercase text-white text-decoration-none fw-bold mt-3 border-1 border-white d-inline-block"
+								style="
+									background: transparent;
+									border: 1px solid white;
+								"
+							>
+								View Certifications
+							</a>
+						</div>
+						<div class="col-md-6">
+							<div class="row gy-5">
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/interpol-i-24-7.webp"
+										alt="Interpol I-24/7 Global Communication Systems"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/microsoft-certified-solutions-associate.webp"
+										alt="Microsoft Certified Solutions Associate"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/certified-ethical-hacker.webp"
+										alt="Certified Ethical Hacker"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/iss-world.webp"
+										alt="ISS World"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/computer-forensic-institute.webp"
+										alt="Computer Forensic Institute"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-3">
+									<img
+										src="./assets/images/pages/certifications/cisco-certified-internet-expert.webp"
+										alt="Cisco Certified Internet Expert"
+										class="img-fluid"
+									/>
+								</div>
+								<div class="col-md-6">
+									<img
+										src="./assets/images/pages/certifications/microsoft-certificate-of-excellence.webp"
+										alt="Microsoft Certificate of Excellence"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</nav>
+			</section>
 
-			<!-- Hero Content -->
-			<div
-				class="container h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative"
+			<!-- Our Team Section -->
+			<section
+				class="bg-black position-relative"
+				aria-labelledby="contact-cta-heading"
 			>
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<h1
-							id="hero-heading"
-							class="display-1 text-uppercase fw-regular fw-bold text-white mb-3"
-						>
-							Sheiks & Bishops Ltd.
-						</h1>
-					</div>
-					<div class="col-md-12">
-						<h2
-							class="display-6 text-uppercase fw-bold text-white mb-3"
-						>
-							Interpol Registered Subject Matter Expert
-						</h2>
-					</div>
-					<div class="col-md-12">
-						<p class="text-white text-uppercase fw-bold fs-2 mt-0">
-							Systems Consultant to Interpol NCB Abuja
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Our Services Section -->
-		<section id="our-services" aria-labelledby="services-heading">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md-6 offset-md-3 text-center">
-						<h2
-							id="services-heading"
-							class="display-6 text-uppercase fw-bold mb-5 separator"
-						>
-							Our Services
-						</h2>
-						<p class="lead">
-							We provide smart, software security solutions
-							tailored to meet the needs of government and
-							corporate organizations.
-						</p>
+				<img
+					src="./assets/images/slider/slider-image-2.webp"
+					alt="Team"
+					aria-hidden="true"
+					class="img-fluid w-100 h-100 object-fit-cover opacity-50 position-absolute top-0 z-0"
+				/>
+				<div class="container position-relative z-1">
+					<div class="row mb-5">
+						<div class="col-md-8 offset-md-2 text-center">
+							<h2
+								id="contact-cta-heading"
+								class="display-6 text-uppercase text-white fw-bold mb-5 separator"
+							>
+								Talk to Us
+							</h2>
+							<p class="lead text-white">
+								We are always available to answer your questions
+								and provide support. Please feel free to reach
+								out to us through any of the contact methods
+								below.
+							</p>
+							<a
+								href="./contact"
+								class="p-3 text-uppercase text-white text-decoration-none fw-bold mt-3 border-1 border-white d-inline-block"
+								style="
+									background: transparent;
+									border: 1px solid white;
+								"
+							>
+								Send Us A Message
+							</a>
+						</div>
 					</div>
 				</div>
+			</section>
 
-				<div class="row gx-5 gy-5">
-					<div class="col-md-6">
-						<div class="row gx-5 gy-5">
-							<div class="col-md-6">
-								<div class="icon-box">
-									<svg
-										class="w-6 h-6 text-gray-800 dark:text-white"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										width="72"
-										height="72"
-										fill="none"
-										viewBox="0 0 24 24"
+			<!-- Our Footer Section -->
+			<footer aria-labelledby="footer-heading">
+				<div class="container">
+					<div class="row">
+						<!-- Company Information -->
+						<div class="col-md-5 mb-5 mb-md-0">
+							<img
+								src="./assets/images/logo.webp"
+								alt="Company logo"
+								height="100"
+							/>
+
+							<h2
+								id="footer-heading"
+								class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
+							>
+								Sheiks & Bishops
+							</h2>
+
+							<p
+								class="text-white"
+								aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+							>
+								Phone Number:<br />
+								+2348033479691
+							</p>
+
+							<address class="text-white mb-4">
+								Contact Address:<br />
+								8 Iro Dan Musa Street, Asokoro, Abuja.
+							</address>
+
+							<p class="text-white">
+								Email Address:<br />
+								info@sheiksandbishop.com
+							</p>
+						</div>
+
+						<!-- Quick Links -->
+						<div
+							class="col-md-3 footer-links mb-5 mb-md-0"
+							aria-labelledby="quick-links-heading"
+						>
+							<h3
+								id="quick-links-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Quick Links
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./"
+										class="text-secondary text-decoration-none"
 									>
-										<path
-											stroke="red"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="1"
-											d="M9.5 11H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h4.5M7 11V7a3 3 0 0 1 6 0v1.5m2.5 5.5v1.5l1 1m3.5-1a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
-										/>
-									</svg>
+										Home
+									</a>
+								</li>
 
-									<h4 class="my-3 fw-bold text-uppercase">
-										Security Systems
-									</h4>
-									<p>
-										Design & implementation of advanced
-										security systems for government and
-										corporate bodies.
-									</p>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="icon-box">
-									<svg
-										class="w-6 h-6 text-gray-800 dark:text-white"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										width="72"
-										height="72"
-										fill="none"
-										viewBox="0 0 24 24"
+								<li class="mb-3">
+									<a
+										href="./about"
+										class="text-secondary text-decoration-none"
 									>
-										<path
-											stroke="red"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="1"
-											d="M5.35709 16V5.78571c0-.43393.34822-.78571.77777-.78571H18.5793c.4296 0 .7778.35178.7778.78571V16M5.35709 16h-1c-.55229 0-1 .4477-1 1v1c0 .5523.44771 1 1 1H20.3571c.5523 0 1-.4477 1-1v-1c0-.5523-.4477-1-1-1h-1M5.35709 16H19.3571M9.35709 8l2.62501 2.5L9.35709 13m4.00001 0h2"
-										/>
-									</svg>
+										About Us
+									</a>
+								</li>
 
-									<h4 class="my-3 fw-bold text-uppercase">
+								<li class="mb-3">
+									<a
+										href="./projects"
+										class="text-secondary text-decoration-none"
+									>
+										Projects
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./gallery"
+										class="text-secondary text-decoration-none"
+									>
+										Gallery
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./contact"
+										class="text-secondary text-decoration-none"
+									>
+										Contact Us
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Services -->
+						<div
+							class="col-md-4 footer-links"
+							aria-labelledby="footer-services-heading"
+						>
+							<h3
+								id="footer-services-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Services
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										IT Security
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
 										Software
-									</h4>
-									<p>
-										Design & development of security
-										software solutions needed by government
-										and corporate bodies.
-									</p>
-								</div>
-							</div>
+									</a>
+								</li>
 
-							<div class="col-md-6">
-								<div class="icon-box">
-									<svg
-										class="w-6 h-6 text-gray-800 dark:text-white"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										width="72"
-										height="72"
-										fill="none"
-										viewBox="0 0 24 24"
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
 									>
-										<path
-											stroke="red"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="1"
-											d="M5 12a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1M5 12h14M5 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1m-2 3h.01M14 15h.01M17 9h.01M14 9h.01"
-										/>
-									</svg>
-
-									<h4 class="my-3 fw-bold text-uppercase">
 										Hardware
-									</h4>
-									<p>
-										Supply, installation and support for
-										quality hardware systems needed for
-										security compliance.
-									</p>
-								</div>
-							</div>
+									</a>
+								</li>
 
-							<div class="col-md-6">
-								<div class="icon-box">
-									<svg
-										class="w-6 h-6 text-gray-800 dark:text-white"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										width="72"
-										height="72"
-										fill="none"
-										viewBox="0 0 24 24"
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
 									>
-										<path
-											stroke="red"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="1"
-											d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
-										/>
-										<path
-											stroke="red"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="1"
-											d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-										/>
-									</svg>
-
-									<h4 class="my-3 fw-bold text-uppercase">
 										Consultancy
-									</h4>
-									<p>
-										Interpol Systems Expert guidance and
-										support to help your organization
-										achieve its security goals.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<img
-							src="assets/images/pages/home/canvas-listing-of-services.webp"
-							alt="Our Services"
-							class="img-fluid rounded h-100"
-							object-fit="fill"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Our Certifications Section -->
-		<section
-			class="bg-black"
-			aria-labelledby="certifications-heading"
-			style="padding: 150px 0"
-		>
-			<div class="container">
-				<div class="row gx-5 gy-5">
-					<div class="col-md-6">
-						<h2
-							id="certifications-heading"
-							class="display-6 text-uppercase fw-bold mb-5 separator-start text-white"
-						>
-							Certifications
-						</h2>
-						<p class="display-6 text-white">
-							Here at Sheiks & Bishops, we ensure we carry out
-							standard services and therefore have the required
-							certifications to do this.
-						</p>
-						<a
-							href="./certifications"
-							class="p-3 text-uppercase text-white text-decoration-none fw-bold mt-3 border-1 border-white d-inline-block"
-							style="
-								background: transparent;
-								border: 1px solid white;
-							"
-						>
-							View Certifications
-						</a>
-					</div>
-					<div class="col-md-6">
-						<div class="row gy-5">
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/interpol-i-24-7.webp"
-									alt="Interpol I-24/7 Global Communication Systems"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/microsoft-certified-solutions-associate.webp"
-									alt="Microsoft Certified Solutions Associate"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/certified-ethical-hacker.webp"
-									alt="Certified Ethical Hacker"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/iss-world.webp"
-									alt="ISS World"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/computer-forensic-institute.webp"
-									alt="Computer Forensic Institute"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-3">
-								<img
-									src="./assets/images/pages/certifications/cisco-certified-internet-expert.webp"
-									alt="Cisco Certified Internet Expert"
-									class="img-fluid"
-								/>
-							</div>
-							<div class="col-md-6">
-								<img
-									src="./assets/images/pages/certifications/microsoft-certificate-of-excellence.webp"
-									alt="Microsoft Certificate of Excellence"
-									class="img-fluid"
-								/>
-							</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<!-- Our Team Section -->
-		<section
-			class="bg-black position-relative"
-			aria-labelledby="contact-cta-heading"
-		>
-			<img
-				src="./assets/images/slider/slider-image-2.webp"
-				alt="Team"
-				aria-hidden="true"
-				class="img-fluid w-100 h-100 object-fit-cover opacity-50 position-absolute top-0 z-0"
-			/>
-			<div class="container position-relative z-1">
-				<div class="row mb-5">
-					<div class="col-md-8 offset-md-2 text-center">
-						<h2
-							id="contact-cta-heading"
-							class="display-6 text-uppercase text-white fw-bold mb-5 separator"
-						>
-							Talk to Us
-						</h2>
-						<p class="lead text-white">
-							We are always available to answer your questions and
-							provide support. Please feel free to reach out to us
-							through any of the contact methods below.
-						</p>
-						<a
-							href="./contact"
-							class="p-3 text-uppercase text-white text-decoration-none fw-bold mt-3 border-1 border-white d-inline-block"
-							style="
-								background: transparent;
-								border: 1px solid white;
-							"
-						>
-							Send Us A Message
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Our Footer Section -->
-		<footer aria-labelledby="footer-heading">
-			<div class="container">
-				<div class="row">
-					<!-- Company Information -->
-					<div class="col-md-5 mb-5 mb-md-0">
-						<img
-							src="./assets/images/logo.webp"
-							alt="Company logo"
-							height="100"
-						/>
-
-						<h2
-							id="footer-heading"
-							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
-						>
-							Sheiks & Bishops
-						</h2>
-
-						<p
-							class="text-white"
-							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
-						>
-							Phone Number:<br />
-							+2348033479691
-						</p>
-
-						<address class="text-white mb-4">
-							Contact Address:<br />
-							8 Iro Dan Musa Street, Asokoro, Abuja.
-						</address>
-
-						<p class="text-white">
-							Email Address:<br />
-							info@sheiksandbishop.com
-						</p>
-					</div>
-
-					<!-- Quick Links -->
-					<div
-						class="col-md-3 footer-links mb-5 mb-md-0"
-						aria-labelledby="quick-links-heading"
-					>
-						<h3
-							id="quick-links-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Quick Links
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./"
-									class="text-secondary text-decoration-none"
-								>
-									Home
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./about"
-									class="text-secondary text-decoration-none"
-								>
-									About Us
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./projects"
-									class="text-secondary text-decoration-none"
-								>
-									Projects
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./gallery"
-									class="text-secondary text-decoration-none"
-								>
-									Gallery
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./contact"
-									class="text-secondary text-decoration-none"
-								>
-									Contact Us
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Services -->
-					<div
-						class="col-md-4 footer-links"
-						aria-labelledby="footer-services-heading"
-					>
-						<h3
-							id="footer-services-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Services
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									IT Security
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Software
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Hardware
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Consultancy
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+			</footer>
+		</main>
 	</body>
 </html>
