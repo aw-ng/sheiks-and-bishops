@@ -41,454 +41,463 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
-		<!-- Our Hero Section -->
-		<section
-			class="bg-black overflow-hidden position-relative"
-			aria-labelledby="page-title"
-		>
-			<img
-				src="./assets/images/banners/certifications-board.webp"
-				alt="Wall of framed certifications and awards"
-				aria-hidden="true"
-				class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
-				fetchpriority="high"
-			/>
-
-			<!-- Navigation -->
-			<nav
-				class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
-				aria-label="Main navigation"
+		<main class="position-relative" tabindex="-1">
+			<!-- Our Hero Section -->
+			<section
+				class="bg-black overflow-hidden position-relative"
+				aria-labelledby="page-title"
 			>
-				<div class="container">
-					<!-- Logo -->
-					<a
-						class="navbar-brand"
-						href="./index.html"
-						aria-label="Company logo"
-					>
-						<img
-							src="./assets/images/logo.webp"
-							alt="SB Logo"
-							class="logo"
-							height="80"
-						/>
-					</a>
+				<img
+					src="./assets/images/banners/certifications-board.webp"
+					alt="Wall of framed certifications and awards"
+					aria-hidden="true"
+					class="h-100 w-100 object-fit-cover opacity-50 position-absolute top-0 start-0 z-0"
+					fetchpriority="high"
+				/>
 
-					<!-- Hamburger Button -->
-					<button
-						class="navbar-toggler border-0 shadow-none"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#mainNav"
-						aria-controls="mainNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span
-							class="navbar-toggler-icon"
-							aria-hidden="true"
-						></span>
-					</button>
-
-					<!-- Navigation Links -->
-					<div
-						class="collapse navbar-collapse justify-content-end"
-						id="mainNav"
-					>
-						<ul class="navbar-nav gap-lg-4 text-center">
-							<li class="nav-item">
-								<a
-									href="./index.html"
-									class="nav-link text-uppercase fw-bold text-white"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									href="./about.html"
-									class="nav-link text-uppercase fw-bold text-white"
-									>About Us</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									href="./projects.html"
-									class="nav-link text-uppercase fw-bold text-white"
-									>Projects</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									href="./gallery.html"
-									class="nav-link text-uppercase fw-bold text-white"
-									>Gallery</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									href="./contact.html"
-									class="nav-link text-uppercase fw-bold text-white"
-									>Contact</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-
-			<!-- Hero Content -->
-			<div
-				class="container z-1 position-relative"
-				style="padding: 100px 0"
-			>
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<h1
-							class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
-						>
-							Certifications
-						</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Our Journey Section -->
-		<section aria-labelledby="journey-heading">
-			<div class="container">
-				<div class="row gy-4 mb-5">
-					<div class="col-lg-4">
-						<h2
-							id="journey-heading"
-							class="text-uppercase fw-bold separator-start mb-0"
-						>
-							Our Journey to Excellence.
-						</h2>
-					</div>
-					<div class="col-lg-8">
-						<p class="lead">
-							Every milestone represents our ongoing investment in
-							quality, information security, operational
-							excellence, and continuous improvement. As
-							technology evolves, so do our standards.
-						</p>
-					</div>
-				</div>
-
-				<!-- Certification Grid -->
-				<div class="row gy-4" aria-label="Certifications">
-					<div class="col-md-6 col-lg-4">
-						<div class="cert-card" aria-labelledby="cert-ceh">
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-ceh">
-								Certified Ethical Hacker (CEH)
-							</h3>
-							<p class="cert-issuer">EC-Council</p>
-							<img
-								src="./assets/images/pages/certifications/certified-ethical-hacker.webp"
-								alt="Certified Ethical Hacker certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="cert-card" aria-labelledby="cert-cisco">
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-cisco">
-								Cisco Certified Internetwork Expert
-							</h3>
-							<p class="cert-issuer">Cisco</p>
-							<img
-								src="./assets/images/pages/certifications/cisco-certified-internet-expert.webp"
-								alt="Cisco Certified Internetwork Expert certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="cert-card" aria-labelledby="cert-forensics">
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-forensics">
-								Computer Forensics Certification
-							</h3>
-							<p class="cert-issuer">
-								Computer Forensic Institute
-							</p>
-							<img
-								src="./assets/images/pages/certifications/computer-forensic-institute.webp"
-								alt="Computer Forensics Certification certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="cert-card" aria-labelledby="cert-interpol">
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-interpol">
-								INTERPOL I-24/7 Registered Expert
-							</h3>
-							<p class="cert-issuer">INTERPOL</p>
-							<img
-								src="./assets/images/pages/certifications/interpol-i-24-7.webp"
-								alt="INTERPOL I-24/7 Registered Expert certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div class="cert-card" aria-labelledby="cert-iss">
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-iss">ISS World Certification</h3>
-							<p class="cert-issuer">ISS World</p>
-							<img
-								src="./assets/images/pages/certifications/iss-world.webp"
-								alt="ISS World certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div
-							class="cert-card"
-							aria-labelledby="cert-microsoft-excellence"
-						>
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-microsoft-excellence">
-								Microsoft Certificate of Excellence
-							</h3>
-							<p class="cert-issuer">Microsoft</p>
-							<img
-								src="./assets/images/pages/certifications/microsoft-certificate-of-excellence.webp"
-								alt="Microsoft Certificate of Excellence certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div
-							class="cert-card"
-							aria-labelledby="cert-microsoft-associate"
-						>
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-microsoft-associate">
-								Microsoft Certified Associate
-							</h3>
-							<p class="cert-issuer">Microsoft</p>
-							<img
-								src="./assets/images/pages/certifications/microsoft-certified-associate.webp"
-								alt="Microsoft Certified Associate certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<div
-							class="cert-card"
-							aria-labelledby="cert-microsoft-solutions"
-						>
-							<p class="cert-org">S&amp;B Group</p>
-							<h3 id="cert-microsoft-solutions">
-								Microsoft Certified Solutions Associate
-							</h3>
-							<p class="cert-issuer">Microsoft</p>
-							<img
-								src="./assets/images/pages/certifications/microsoft-certified-solutions-associate.webp"
-								alt="Microsoft Certified Solutions Associate certificate"
-								class="cert-image"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- CTA Section -->
-		<section
-			class="bg-black position-relative overflow-hidden"
-			style="padding: 125px 0"
-			aria-labelledby="cta-heading"
-		>
-			<img
-				src="./assets/images/pages/certifications/warm-hand-shake.webp"
-				alt="People shaking hands"
-				aria-hidden="true"
-				class="img-fluid object-fit-cover opacity-50 position-absolute top-0 start-0 w-100 h-100 z-0"
-			/>
-			<div class="container z-1 position-relative">
-				<div class="row">
-					<div class="col-sm-6 offset-sm-3 d-flex flex-column">
-						<h2
-							id="cta-heading"
-							class="text-uppercase fw-bold mb-3 text-center text-white"
-						>
-							Let's Build Something Secure
-						</h2>
-						<p class="lead mb-5 text-center text-white">
-							Partner with our experts to build secure, reliable,
-							and future-ready technology solutions.
-						</p>
+				<!-- Navigation -->
+				<nav
+					class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-1 py-3"
+					aria-label="Main navigation"
+				>
+					<div class="container">
+						<!-- Logo -->
 						<a
-							href="./contact"
-							class="btn btn-outline-light text-uppercase align-self-center px-4 py-3"
-							aria-describedby="cta-description"
+							class="navbar-brand"
+							href="./index.html"
+							aria-label="Company logo"
 						>
-							Request a Consultation
+							<img
+								src="./assets/images/logo.webp"
+								alt="SB Logo"
+								class="logo"
+								height="80"
+							/>
 						</a>
+
+						<!-- Hamburger Button -->
+						<button
+							class="navbar-toggler border-0 shadow-none"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#mainNav"
+							aria-controls="mainNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span
+								class="navbar-toggler-icon"
+								aria-hidden="true"
+							></span>
+						</button>
+
+						<!-- Navigation Links -->
+						<div
+							class="collapse navbar-collapse justify-content-end"
+							id="mainNav"
+						>
+							<ul class="navbar-nav gap-lg-4 text-center">
+								<li class="nav-item">
+									<a
+										href="./index.html"
+										class="nav-link text-uppercase fw-bold text-white"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										href="./about.html"
+										class="nav-link text-uppercase fw-bold text-white"
+										>About Us</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										href="./projects.html"
+										class="nav-link text-uppercase fw-bold text-white"
+										>Projects</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										href="./gallery.html"
+										class="nav-link text-uppercase fw-bold text-white"
+										>Gallery</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										href="./contact.html"
+										class="nav-link text-uppercase fw-bold text-white"
+										>Contact</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<!-- Hero Content -->
+				<div
+					class="container z-1 position-relative"
+					style="padding: 100px 0"
+				>
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<h1
+								class="display-6 text-uppercase text-center separator fw-regular fw-bold text-white mb-3"
+							>
+								Certifications
+							</h1>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Our Footer Section -->
-		<footer aria-labelledby="footer-heading">
-			<div class="container">
-				<div class="row">
-					<!-- Company Information -->
-					<div class="col-md-5 mb-5 mb-md-0">
-						<img
-							src="./assets/images/logo.webp"
-							alt="Company logo"
-							height="100"
-						/>
-
-						<h2
-							id="footer-heading"
-							class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
-						>
-							Sheiks & Bishops
-						</h2>
-
-						<p
-							class="text-white"
-							aria-label="Call Sheiks and Bishops at +234 803 347 9691"
-						>
-							Phone Number:<br />
-							+2348033479691
-						</p>
-
-						<address class="text-white mb-4">
-							Contact Address:<br />
-							8 Iro Dan Musa Street, Asokoro, Abuja.
-						</address>
-
-						<p class="text-white">
-							Email Address:<br />
-							info@sheiksandbishop.com
-						</p>
+			<!-- Our Journey Section -->
+			<section aria-labelledby="journey-heading">
+				<div class="container">
+					<div class="row gy-4 mb-5">
+						<div class="col-lg-4">
+							<h2
+								id="journey-heading"
+								class="text-uppercase fw-bold separator-start mb-0"
+							>
+								Our Journey to Excellence.
+							</h2>
+						</div>
+						<div class="col-lg-8">
+							<p class="lead">
+								Every milestone represents our ongoing
+								investment in quality, information security,
+								operational excellence, and continuous
+								improvement. As technology evolves, so do our
+								standards.
+							</p>
+						</div>
 					</div>
 
-					<!-- Quick Links -->
-					<div
-						class="col-md-3 footer-links mb-5 mb-md-0"
-						aria-labelledby="quick-links-heading"
-					>
-						<h3
-							id="quick-links-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Quick Links
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./"
-									class="text-secondary text-decoration-none"
-								>
-									Home
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./about"
-									class="text-secondary text-decoration-none"
-								>
-									About Us
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./projects"
-									class="text-secondary text-decoration-none"
-								>
-									Projects
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./gallery"
-									class="text-secondary text-decoration-none"
-								>
-									Gallery
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./contact"
-									class="text-secondary text-decoration-none"
-								>
-									Contact Us
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Services -->
-					<div
-						class="col-md-4 footer-links"
-						aria-labelledby="footer-services-heading"
-					>
-						<h3
-							id="footer-services-heading"
-							class="text-white fw-normal mb-4"
-						>
-							Services
-						</h3>
-
-						<ul class="list-unstyled">
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									IT Security
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Software
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Hardware
-								</a>
-							</li>
-
-							<li class="mb-3">
-								<a
-									href="./index.html#our-services"
-									class="text-secondary text-decoration-none"
-								>
-									Consultancy
-								</a>
-							</li>
-						</ul>
+					<!-- Certification Grid -->
+					<div class="row gy-4" aria-label="Certifications">
+						<div class="col-md-6 col-lg-4">
+							<div class="cert-card" aria-labelledby="cert-ceh">
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-ceh">
+									Certified Ethical Hacker (CEH)
+								</h3>
+								<p class="cert-issuer">EC-Council</p>
+								<img
+									src="./assets/images/pages/certifications/certified-ethical-hacker.webp"
+									alt="Certified Ethical Hacker certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="cert-card" aria-labelledby="cert-cisco">
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-cisco">
+									Cisco Certified Internetwork Expert
+								</h3>
+								<p class="cert-issuer">Cisco</p>
+								<img
+									src="./assets/images/pages/certifications/cisco-certified-internet-expert.webp"
+									alt="Cisco Certified Internetwork Expert certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div
+								class="cert-card"
+								aria-labelledby="cert-forensics"
+							>
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-forensics">
+									Computer Forensics Certification
+								</h3>
+								<p class="cert-issuer">
+									Computer Forensic Institute
+								</p>
+								<img
+									src="./assets/images/pages/certifications/computer-forensic-institute.webp"
+									alt="Computer Forensics Certification certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div
+								class="cert-card"
+								aria-labelledby="cert-interpol"
+							>
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-interpol">
+									INTERPOL I-24/7 Registered Expert
+								</h3>
+								<p class="cert-issuer">INTERPOL</p>
+								<img
+									src="./assets/images/pages/certifications/interpol-i-24-7.webp"
+									alt="INTERPOL I-24/7 Registered Expert certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="cert-card" aria-labelledby="cert-iss">
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-iss">ISS World Certification</h3>
+								<p class="cert-issuer">ISS World</p>
+								<img
+									src="./assets/images/pages/certifications/iss-world.webp"
+									alt="ISS World certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div
+								class="cert-card"
+								aria-labelledby="cert-microsoft-excellence"
+							>
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-microsoft-excellence">
+									Microsoft Certificate of Excellence
+								</h3>
+								<p class="cert-issuer">Microsoft</p>
+								<img
+									src="./assets/images/pages/certifications/microsoft-certificate-of-excellence.webp"
+									alt="Microsoft Certificate of Excellence certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div
+								class="cert-card"
+								aria-labelledby="cert-microsoft-associate"
+							>
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-microsoft-associate">
+									Microsoft Certified Associate
+								</h3>
+								<p class="cert-issuer">Microsoft</p>
+								<img
+									src="./assets/images/pages/certifications/microsoft-certified-associate.webp"
+									alt="Microsoft Certified Associate certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div
+								class="cert-card"
+								aria-labelledby="cert-microsoft-solutions"
+							>
+								<p class="cert-org">S&amp;B Group</p>
+								<h3 id="cert-microsoft-solutions">
+									Microsoft Certified Solutions Associate
+								</h3>
+								<p class="cert-issuer">Microsoft</p>
+								<img
+									src="./assets/images/pages/certifications/microsoft-certified-solutions-associate.webp"
+									alt="Microsoft Certified Solutions Associate certificate"
+									class="cert-image"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</section>
+
+			<!-- CTA Section -->
+			<section
+				class="bg-black position-relative overflow-hidden"
+				style="padding: 125px 0"
+				aria-labelledby="cta-heading"
+			>
+				<img
+					src="./assets/images/pages/certifications/warm-hand-shake.webp"
+					alt="People shaking hands"
+					aria-hidden="true"
+					class="img-fluid object-fit-cover opacity-50 position-absolute top-0 start-0 w-100 h-100 z-0"
+				/>
+				<div class="container z-1 position-relative">
+					<div class="row">
+						<div class="col-sm-6 offset-sm-3 d-flex flex-column">
+							<h2
+								id="cta-heading"
+								class="text-uppercase fw-bold mb-3 text-center text-white"
+							>
+								Let's Build Something Secure
+							</h2>
+							<p class="lead mb-5 text-center text-white">
+								Partner with our experts to build secure,
+								reliable, and future-ready technology solutions.
+							</p>
+							<a
+								href="./contact"
+								class="btn btn-outline-light text-uppercase align-self-center px-4 py-3"
+								aria-describedby="cta-description"
+							>
+								Request a Consultation
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Footer Section -->
+			<footer aria-labelledby="footer-heading">
+				<div class="container">
+					<div class="row">
+						<!-- Company Information -->
+						<div class="col-md-5 mb-5 mb-md-0">
+							<img
+								src="./assets/images/logo.webp"
+								alt="Company logo"
+								height="100"
+							/>
+
+							<h2
+								id="footer-heading"
+								class="display-6 text-uppercase fw-bold mt-3 mb-5 separator-start text-white"
+							>
+								Sheiks & Bishops
+							</h2>
+
+							<p
+								class="text-white"
+								aria-label="Call Sheiks and Bishops at +234 803 347 9691"
+							>
+								Phone Number:<br />
+								+2348033479691
+							</p>
+
+							<address class="text-white mb-4">
+								Contact Address:<br />
+								8 Iro Dan Musa Street, Asokoro, Abuja.
+							</address>
+
+							<p class="text-white">
+								Email Address:<br />
+								info@sheiksandbishop.com
+							</p>
+						</div>
+
+						<!-- Quick Links -->
+						<div
+							class="col-md-3 footer-links mb-5 mb-md-0"
+							aria-labelledby="quick-links-heading"
+						>
+							<h3
+								id="quick-links-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Quick Links
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./"
+										class="text-secondary text-decoration-none"
+									>
+										Home
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./about"
+										class="text-secondary text-decoration-none"
+									>
+										About Us
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./projects"
+										class="text-secondary text-decoration-none"
+									>
+										Projects
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./gallery"
+										class="text-secondary text-decoration-none"
+									>
+										Gallery
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./contact"
+										class="text-secondary text-decoration-none"
+									>
+										Contact Us
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Services -->
+						<div
+							class="col-md-4 footer-links"
+							aria-labelledby="footer-services-heading"
+						>
+							<h3
+								id="footer-services-heading"
+								class="text-white fw-normal mb-4"
+							>
+								Services
+							</h3>
+
+							<ul class="list-unstyled">
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										IT Security
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Software
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Hardware
+									</a>
+								</li>
+
+								<li class="mb-3">
+									<a
+										href="./index.html#our-services"
+										class="text-secondary text-decoration-none"
+									>
+										Consultancy
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
 	</body>
 </html>
